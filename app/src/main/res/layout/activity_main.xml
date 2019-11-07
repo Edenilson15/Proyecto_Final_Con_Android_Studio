@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="horizontal">
+    tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -21,174 +20,14 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="serif-monospace"
-        android:text="Himnario"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="26dp"
-        android:textStyle="bold" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:src="@drawable/articulo"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                />
-
-            <EditText
-                android:id="@+id/et_codigo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Ingrese el código"
-                android:inputType="number"
-                android:background="@drawable/estiloedittext"
-                android:shadowRadius="5"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_hola"
-                android:drawablePadding="5dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                />
-
-            <EditText
-                android:id="@+id/et_descripcion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Ingrese la Letra de Alabanza o Coros"
-                android:layout_marginRight="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_descripcion"
-                android:drawablePadding="5dp"
-                />
-
-            <EditText
-                android:id="@+id/et_precio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Ingrese el precio del artículo"
-                android:layout_marginRight="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_precio"
-                android:drawablePadding="5dp"
-                />
-
-
-            <Button
-                android:id="@+id/btn_guardar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="30dp"
-                android:text="Guardar"
-                android:textColor="#0A0A0A"
-                android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                android:drawableRight="@drawable/ic_save"
-                android:paddingRight="100dp"
-                android:drawablePadding="-140dp"
-                />
-
-            <Button
-                android:id="@+id/btn_consultaCodigo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Consultar por código"
-                android:textColor="#0E0D0D"
-                android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                android:drawableStart="@drawable/ic_search"
-                android:paddingLeft="80dp"
-                android:drawablePadding="-40dp"
-                />
-
-            <Button
-                android:id="@+id/btn_consultaDescripcion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Consultar por descrición"
-                android:textColor="#0A0A0A"
-                android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
-                android:drawableStart="@drawable/ic_search"
-                android:paddingLeft="50dp"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                />
-
-            <Button
-                android:id="@+id/btn_eliminar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Borrar"
-                android:textColor="#070707"
-                android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
-                android:drawableRight="@drawable/ic_borrar"
-                android:paddingRight="100dp"
-                android:drawablePadding="-140dp"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                />
-
-            <Button
-                android:id="@+id/btn_actualizar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Editar"
-                android:textColor="#070707"
-                android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
-                android:shadowDx="-3"
-                android:shadowDy="0"
-                android:shadowRadius="8"
-                android:layout_marginBottom="20dp"
-                />
-
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
