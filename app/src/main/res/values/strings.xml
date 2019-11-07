@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Himnario</string>
+<<<<<<< HEAD
     <string name="tab_text_1">Tgit</string>
     <string name="tab_text_2">Tab 2</string>
+=======
+    <string name="tab_text_1">Alavanzas</string>
+    <string name="tab_text_2">Himno</string>
+>>>>>>> 88bcff139ec777d198deebdb404949b607a86499
 </resources>
