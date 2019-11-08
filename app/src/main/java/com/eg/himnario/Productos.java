@@ -50,7 +50,7 @@ public class Productos {
 
     public Productos(int codigo, String letra,String actor, String genero, String imagen) {
         this.codigo = codigo;
-        this.letra= descripcion;
+        this.letra= letra;
         Actor = actor;
         this.genero = genero;
     }

@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.eg.himnario"
+3    package="com.eg.sql"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\Shadows\Documents\Himnario\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.0.1] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\Users\Shadows\Documents\Himnario\app\src\main\AndroidManifest.xml:7:9-43
@@ -46,17 +46,6 @@
 27-->C:\Users\Shadows\Documents\Himnario\app\src\main\AndroidManifest.xml:19:27-74
 28            </intent-filter>
 29        </activity>
-30
-31        <provider
-31-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\e50b3f7edd4f9041d2755ee263c7c860\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-32            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-32-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\e50b3f7edd4f9041d2755ee263c7c860\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-33            android:authorities="com.eg.himnario.lifecycle-process"
-33-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\e50b3f7edd4f9041d2755ee263c7c860\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-34            android:exported="false"
-34-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\e50b3f7edd4f9041d2755ee263c7c860\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-35            android:multiprocess="true" />
-35-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\e50b3f7edd4f9041d2755ee263c7c860\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-36    </application>
-37
-38</manifest>
+30    </application>
+31
+32</manifest>

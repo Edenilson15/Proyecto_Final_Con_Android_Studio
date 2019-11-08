@@ -34,7 +34,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:src="@drawable/articulos"
+                android:src="@drawable/articulo"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 />

@@ -47,7 +47,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         if(im.isEmpty()) {
             holder.imageView.setImageResource(R.drawable.imgnoencontrada);
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textViewgenero1.setText(product.getDescripcion());
+            holder.textViewgenero1.setText(product.getGenero());
             holder.textViewActor1.setText(String.valueOf(product.getActor()));
 
         }else{
@@ -56,8 +56,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
                     .into(holder.imageView);
 
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textView.setText(product.getDescripcion());
-            holder.textViewPrecio1.setText(String.valueOf(product.getPrecio()));
+            holder.textViewgenero1.setText(product.getGenero());
+            holder.textViewActor1.setText(String.valueOf(product.getActor()));
         }
 
     }
