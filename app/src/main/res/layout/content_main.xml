@@ -56,7 +56,7 @@
                 />
 
             <EditText
-                android:id="@+id/et_descripcion"
+                android:id="@+id/et_letra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Ingrese la descripción del artículo"

@@ -26,18 +26,20 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    private EditText et_codigo, et_descripcion, et_precio;
+    private EditText et_codigo, et_letra, et_genero,et_autor;
     private Button btn_guardar, btn_consultaCodigo, btn_consultaDescripcion, btn_eliminar, btn_actualizar;
 
     boolean inputEt=false;
     boolean inputEd=false;
     boolean input1=false;
+    boolean input2=false;
     int resultadoInsert=0;
 
     String senal = "";
     String codigo = "";
-    String descripcion = "";
-    String precio = "";
+    String letra = "";
+    String autor = "";
+    String genero = "";
 
     MantenimientoMySQL manto = new MantenimientoMySQL();
     Dto datos = new Dto();
@@ -78,17 +80,18 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
         toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
         toolbar.setTitleMargin(0, 0, 0, 0);
-        toolbar.setSubtitle("CRUD MySQL~2019");
+        toolbar.setSubtitle("Himnario");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
-        toolbar.setTitle("Practica Git");
+        toolbar.setTitle("Encuentra Todas las Alavanzas aqui");
         setSupportActionBar(toolbar);
 
         ///y esto para pantalla completa (oculta incluso la barra de estado)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         et_codigo = (EditText) findViewById(R.id.et_codigo);
-        et_descripcion = (EditText) findViewById(R.id.et_descripcion);
-        et_precio = (EditText) findViewById(R.id.et_precio);
+        et_letra = (EditText) findViewById(R.id.et_letra);
+        et_autor = (EditText) findViewById(R.id.et_autor);
+        et_genero = (EditText) findViewById(R.id.et_genero);
         btn_guardar = (Button) findViewById(R.id.btn_guardar);
         btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
         btn_consultaDescripcion = (Button) findViewById(R.id.btn_consultaDescripcion);
@@ -114,12 +117,14 @@ public class MainActivity extends AppCompatActivity {
 
                 senal = bundle.getString("senal");
                 codigo = bundle.getString("codigo");
-                descripcion = bundle.getString("descripcion");
-                precio = bundle.getString("precio");
+                letra = bundle.getString("letra");
+                genero = bundle.getString("genero");
+                autor = bundle.getString("autor");
                 if (senal.equals("1")) {
                     et_codigo.setText(codigo);
-                    et_descripcion.setText(descripcion);
-                    et_precio.setText(precio);
+                    et_letra.setText(letra);
+                    et_autor.setText(autor);
+                    et_genero.setText(genero);
                     //finish();
                 }else if(senal.equals("2")){
 
@@ -142,24 +147,31 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     inputEt=true;
                 }
-                if(et_descripcion.getText().toString().length()==0){
-                    et_descripcion.setError("Campo obligatorio");
+                if(et_letra.getText().toString().length()==0){
+                    et_letra.setError("Campo obligatorio");
                     inputEd = false;
                 }else {
                     inputEd=true;
                 }
-                if(et_precio.getText().toString().length()==0){
-                    et_precio.setError("Campo obligatorio");
+                if(et_autor.getText().toString().length()==0){
+                    et_autor.setError("Campo obligatorio");
                     input1 = false;
                 }else {
                     input1=true;
                 }
+                if(et_genero.getText().toString().length()==0){
+                    et_genero.setError("Campo obligatorio");
+                    input2 = false;
+                }else {
+                    input2=true;
+                }
 
-                if (inputEt && inputEd && input1){
+                if (inputEt && inputEd && input1 && input2){
                     String codigo = et_codigo.getText().toString();
-                    String descripcion = et_descripcion.getText().toString();
-                    String precio = et_precio.getText().toString();
-                    manto.guardar(MainActivity.this, codigo, descripcion, precio);
+                    String letra = et_letra.getText().toString();
+                    String autor = et_autor.getText().toString();
+                    String genero = et_genero.getText().toString();
+                    manto.guardar(MainActivity.this, codigo, letra, autor, genero );
 
                     limpiarDatos();
                     et_codigo.requestFocus();
@@ -240,17 +252,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(et_descripcion.getText().toString().length()==0){
-                    et_descripcion.setError("Campo obligatorio");
+                if(et_letra.getText().toString().length()==0){
+                    et_letra.setError("Campo obligatorio");
                     inputEd = false;
                 }else {
                     inputEd=true;
                 }
                 if(inputEd){
-                    String descripcion = et_descripcion.getText().toString();
+                    String descripcion = et_letra.getText().toString();
                     //datos.setDescripcion(descripcion);
                     manto.consultarDescripcion(MainActivity.this, descripcion);
-                    et_descripcion.requestFocus();
+                    et_letra.requestFocus();
                     //Hilo();
 
                 }
@@ -273,12 +285,15 @@ public class MainActivity extends AppCompatActivity {
                 if(inputEt) {
 
                     String cod = et_codigo.getText().toString();
-                    String descripcion = et_descripcion.getText().toString();
-                    String precio = et_precio.getText().toString();
+                    String letra = et_letra.getText().toString();
+                    String autor = et_autor.getText().toString();
+                    String genero = et_genero.getText().toString();
 
                     datos.setCodigo(Integer.parseInt(cod));
-                    datos.setDescripcion(descripcion);
-                    datos.setPrecio(Double.parseDouble(precio));
+                    datos.setLetra(letra);
+                    datos.setAutor(autor);
+                    datos.setGenero(genero);
+
                     manto.modificar(MainActivity.this, datos);
                     limpiarDatos();
                     et_codigo.requestFocus();
@@ -302,8 +317,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void limpiarDatos(){
         et_codigo.setText(null);
-        et_descripcion.setText(null);
-        et_precio.setText(null);
+        et_letra.setText(null);
+        et_autor.setText(null);
+        et_genero.setText(null);
     }
 
 
@@ -326,8 +342,9 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_limpiar) {
             et_codigo.setText(null);
-            et_descripcion.setText(null);
-            et_precio.setText(null);
+            et_letra.setText(null);
+            et_autor.setText(null);
+            et_genero.setText(null);
             return true;
         }else if(id == R.id.action_listaArticulos){
             Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
@@ -385,12 +402,14 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         String cod = getSharedCodigo(MainActivity.this);
-                        String des = getSharedDescripcion(MainActivity.this);
-                        String pre = getSharedPrecio(MainActivity.this);
+                        String le = getSharedLetra(MainActivity.this);
+                        String au = getSharedAutor(MainActivity.this);
+                        String gene = getSharedGenero(MainActivity.this);
 
                         et_codigo.setText(cod);
-                        et_descripcion.setText(des);
-                        et_precio.setText(pre);
+                        et_letra.setText(le);
+                        et_autor.setText(au);
+                        et_genero.setText(gene);
 
                         //Toast.makeText(MainActivity.this, "Código: "+cod + "\nPrecio: "+pre + "\nDescripción: "+des, Toast.LENGTH_SHORT).show();
                     }
@@ -408,21 +427,26 @@ public class MainActivity extends AppCompatActivity {
 
 
     public String getSharedCodigo(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
+        SharedPreferences preferences = context.getSharedPreferences("Himnario", MODE_PRIVATE);
         String codigo = preferences.getString("codigo","0");
         return codigo;   //return preferences.getString("tiempo", "Sin configurar.");
     }
 
-    public String getSharedDescripcion(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
-        String descripcion = preferences.getString("descripcion","Sin descripción");
-        return descripcion;   //return preferences.getString("tiempo", "Sin configurar.");
+    public String getSharedLetra(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences("Himnario", MODE_PRIVATE);
+        String letra = preferences.getString("letra","Sin letra");
+        return letra;   //return preferences.getString("tiempo", "Sin configurar.");
     }
 
-    public String getSharedPrecio(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
-        String precio = preferences.getString("precio","0.0");
-        return precio;   //return preferences.getString("tiempo", "Sin configurar.");
+    public String getSharedAutor(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences("Himnario", MODE_PRIVATE);
+        String autor = preferences.getString("autor","Sin letra");
+        return autor;   //return preferences.getString("tiempo", "Sin configurar.");
+    }
+    public String getSharedGenero(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences("Himnario", MODE_PRIVATE);
+        String genero = preferences.getString("genero","Sin letra");
+        return genero;   //return preferences.getString("tiempo", "Sin configurar.");
     }
 
 
