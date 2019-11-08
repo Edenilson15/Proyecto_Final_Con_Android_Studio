@@ -2,9 +2,18 @@ package com.eg.himnario;
 
 public class Productos {
     int codigo;
-    String descripcion;
+    String letra;
     String Actor;
     String genero;
+    String imagen;
+
+    public String getLetra() {
+        return letra;
+    }
+
+    public void setLetra(String letra) {
+        this.letra = letra;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -14,13 +23,7 @@ public class Productos {
         this.codigo = codigo;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 
     public String getActor() {
         return Actor;
@@ -37,10 +40,17 @@ public class Productos {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+    public String getImagen() {
+        return imagen;
+    }
 
-    public Productos(int codigo, String descripcion, String actor, String genero) {
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public Productos(int codigo, String letra,String actor, String genero, String imagen) {
         this.codigo = codigo;
-        this.descripcion = descripcion;
+        this.letra= descripcion;
         Actor = actor;
         this.genero = genero;
     }

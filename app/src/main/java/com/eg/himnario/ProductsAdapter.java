@@ -47,8 +47,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         if(im.isEmpty()) {
             holder.imageView.setImageResource(R.drawable.imgnoencontrada);
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textViewDescripcion1.setText(product.getDescripcion());
-            holder.textViewPrecio1.setText(String.valueOf(product.getPrecio()));
+            holder.textViewgenero1.setText(product.getDescripcion());
+            holder.textViewActor1.setText(String.valueOf(product.getActor()));
 
         }else{
             Glide.with(mCtx)
@@ -56,7 +56,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
                     .into(holder.imageView);
 
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textViewDescripcion1.setText(product.getDescripcion());
+            holder.textView.setText(product.getDescripcion());
             holder.textViewPrecio1.setText(String.valueOf(product.getPrecio()));
         }
 
@@ -69,15 +69,15 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewCodigo1, textViewDescripcion1, textViewPrecio1;
+        TextView textViewCodigo1, textViewActor1, textViewgenero1;
         ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
 
             textViewCodigo1 = itemView.findViewById(R.id.textViewCodigo1);
-            textViewDescripcion1 = itemView.findViewById(R.id.textViewDescripcion1);
-            textViewPrecio1= itemView.findViewById(R.id.textViewPrecio1);
+            textViewgenero1 = itemView.findViewById(R.id.textViewgenero1);
+            textViewActor1= itemView.findViewById(R.id.textViewActor1);
             imageView = itemView.findViewById(R.id.imageView);
         }
     }
