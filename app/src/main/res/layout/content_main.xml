@@ -70,17 +70,32 @@
                 />
 
             <EditText
-                android:id="@+id/et_precio"
+                android:id="@+id/et_autor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el precio del artículo"
+                android:hint="Ingrese el Autor de la Alabanza o Coro"
                 android:layout_marginRight="12dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
-                android:inputType="numberDecimal"
+                android:inputType="textPersonName"
                 android:background="@drawable/estiloedittext"
                 android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_precio"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/et_genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el Genero de la Alabanza o Coro"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/estiloedittext"
+                android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_person"
                 android:drawablePadding="5dp"
                 />
 

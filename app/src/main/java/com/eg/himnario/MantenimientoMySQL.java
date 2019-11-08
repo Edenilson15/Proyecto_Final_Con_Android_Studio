@@ -64,7 +64,7 @@ public class MantenimientoMySQL {
     //List<> productosList;
     ProductsAdapter adapter;
 
-    public void guardar(final Context context, final String codigo, final String descripcion, final String precio){
+    public void guardar(final Context context, final String codigo, final String letra, final String genero , final String autor){
         String url = Config.urlGuardar;
         //String url = "localhost/democrudsis21a/guardar.php";
         StringRequest request = new StringRequest(Request.Method.POST, url,
@@ -106,8 +106,9 @@ public class MantenimientoMySQL {
                 map.put("Content-Type", "application/json; charset=utf-8");
                 map.put("Accept", "application/json");
                 map.put("codigo", codigo);
-                map.put("descripcion", descripcion);
-                map.put("precio", precio);
+                map.put("letra", letra);
+                map.put("genero",genero );
+                map.put("autor",autor );
                 return map;
             }
         };
@@ -117,7 +118,7 @@ public class MantenimientoMySQL {
     }
 
 
-    public boolean guardar1(final Context context, final String codigo, final String descripcion, final String precio) {
+    public boolean guardar1(final Context context, final String codigo, final String letra, final String genero , final String autor){
         //String url = "http://mjgl.com.sv/mysqlcrud/guardar.php";
         String url  = Config.urlGuardar;
         StringRequest request = new StringRequest(Request.Method.POST, url,
@@ -163,8 +164,9 @@ public class MantenimientoMySQL {
                 map.put("Content-Type", "application/json; charset=utf-8");
                 map.put("Accept", "application/json");
                 map.put("codigo", codigo);
-                map.put("descripcion", descripcion);
-                map.put("precio", precio);
+                map.put("letra", letra);
+                map.put("genero",genero );
+                map.put("autor",autor );
                 return map;
             }
         };
@@ -289,15 +291,17 @@ public class MantenimientoMySQL {
                                 */
                                 JSONArray jsonArray = new JSONArray(response);
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
-                                String descripcion = jsonArray.getJSONObject(0).getString("descripcion");
-                                String precio = jsonArray.getJSONObject(0).getString("precio");
+                                String letra = jsonArray.getJSONObject(0).getString("letra");
+                                String autor = jsonArray.getJSONObject(0).getString("autor");
+                                String genero = jsonArray.getJSONObject(0).getString("genero");
 
 
                                 Intent intent = new Intent(context, MainActivity.class);
                                 intent.putExtra("senal", "1");
                                 intent.putExtra("codigo", codigo.toString());
-                                intent.putExtra("descripcion", descripcion);
-                                intent.putExtra("precio", precio);
+                                intent.putExtra("letra", letra);
+                                intent.putExtra("autor", autor);
+                                intent.putExtra("genero", genero);
                                 context.startActivity(intent);
 
 
@@ -330,7 +334,7 @@ public class MantenimientoMySQL {
     }
 
 
-    public void consultarDescripcion(final Context context, final String descripcion){
+    public void consultarDescripcion(final Context context, final String autor){
 
         progressDialog = new ProgressDialog(context);
         progressDialog.setCancelable(false);
@@ -358,18 +362,21 @@ public class MantenimientoMySQL {
                                 */
                                 JSONArray jsonArray = new JSONArray(response);
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
-                                String descripcion = jsonArray.getJSONObject(0).getString("descripcion");
-                                String precio = jsonArray.getJSONObject(0).getString("precio");
+                                String letra = jsonArray.getJSONObject(0).getString("descripcion");
+                                String autor = jsonArray.getJSONObject(0).getString("autor");
+                                String genero = jsonArray.getJSONObject(0).getString("genero");
 
                                datos.setCodigo(Integer.parseInt(codigo));
-                               datos.setDescripcion(descripcion);
-                               datos.setPrecio(Double.parseDouble(precio));
+                               datos.setLetra(letra);
+                               datos.setGenero(genero);
+                                datos.setAutor(autor);
 
                                 Intent intent = new Intent(context, MainActivity.class);
                                 intent.putExtra("senal", "1");
                                 intent.putExtra("codigo", codigo.toString());
-                                intent.putExtra("descripcion", descripcion);
-                                intent.putExtra("precio", precio);
+                                intent.putExtra("letra", letra);
+                                intent.putExtra("autor", autor);
+                                intent.putExtra("genero", genero);
                                 //intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                                 context.startActivity(intent);
 
@@ -393,7 +400,7 @@ public class MantenimientoMySQL {
                 }) {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> map = new HashMap<String, String>();
-                map.put("descripcion", descripcion);
+                map.put("autor", autor);
                 return map;
             }
         };
@@ -431,10 +438,11 @@ public class MantenimientoMySQL {
                                 JSONObject articulosObject = array.getJSONObject(i);
 
                                 int codigo = articulosObject.getInt("codigo");
-                                String descripcion = articulosObject.getString("descripcion");
-                                double precio = articulosObject.getDouble("precio");
+                                String letra = articulosObject.getString("letra");
+                                String genero = articulosObject.getString("genero");
+                                String autor = articulosObject.getString("autor");
                                 String img = articulosObject.getString("imagen");
-                                Productos objeto = new Productos(codigo, descripcion, precio, img);
+                                Productos objeto = new Productos(codigo, letra,autor, genero, img);
                                 productosList.add(objeto);
 
                                 /*
@@ -526,8 +534,10 @@ public class MantenimientoMySQL {
                 map.put("Content-Type", "application/json; charset=utf-8");
                 map.put("Accept", "application/json");
                 map.put("codigo", String.valueOf(datos.getCodigo()));
-                map.put("descripcion", datos.getDescripcion());
-                map.put("precio", String.valueOf(datos.getPrecio()));
+                map.put("letra", datos.getLetra());
+                map.put("genero", datos.getGenero());
+                map.put("autor", datos.getAutor());
+
                 /*
                 map.put("codigo", codigo);
                 map.put("descripcion", descripcion);
@@ -545,13 +555,14 @@ public class MantenimientoMySQL {
     public String informacion(Dto datos){
         String info;
         info = "Codigo = "+datos.getCodigo() + "\n" ;
-        info += "Descripción = "+datos.getDescripcion() + "\n";
-        info += "Precio = "+datos.getPrecio() + "\n";
+        info += "letra = "+datos.getLetra() + "\n";
+        info += "genero = "+datos.getGenero() + "\n";
+        info += "autor = "+datos.getAutor() + "\n";
         return info;
     }
 
 
-    public void createfile(Context context, String codigo, String descripcion, String precio){
+    public void createfile(Context context, String codigo, String letra, String autor, String genero){
         SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
         //OBTENIENDO LA FECHA Y HORA ACTUAL DEL SISTEMA.
         DateFormat formatodate= new SimpleDateFormat("yyyy/MM/dd");
@@ -562,8 +573,9 @@ public class MantenimientoMySQL {
         editor.putString("fecha", date);
         editor.putString("hora", time);
         editor.putString("codigo", codigo);
-        editor.putString("descripcion", descripcion);
-        editor.putString("precio", precio);
+        editor.putString("letra", letra);
+        editor.putString("autor", autor);
+        editor.putString("genero", genero);
         editor.commit();
     }
 

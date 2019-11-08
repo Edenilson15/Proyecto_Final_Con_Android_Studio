@@ -2,10 +2,19 @@ package com.eg.himnario;
 
 public class Dto {
 
+
+    int codigo;
     String autor;
     String letra;
     String genero;
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
     public String getAutor() {
         return autor;
     }
@@ -31,6 +40,7 @@ public class Dto {
     }
 
     public Dto() {
+        this.codigo=codigo;
         this.autor = autor;
         this.letra = letra;
         this.genero = genero;
