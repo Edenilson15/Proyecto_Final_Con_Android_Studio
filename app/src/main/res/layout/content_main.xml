@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#3E3853"
+    android:background="#F1F0E5"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -18,7 +18,7 @@
         android:fontFamily="serif-monospace"
         android:text="Himnario"
         android:textAlignment="center"
-        android:textColor="#F1E4E4"
+        android:textColor="#110E0E"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -42,16 +42,16 @@
                 android:id="@+id/et_codigo"
                 android:layout_width="392dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloedittext"
-                android:drawableStart="@drawable/ic_hola"
                 android:drawablePadding="5dp"
                 android:hint="Ingrese el código"
                 android:fontFamily="sans-serif-black"
                 android:inputType="number"
                 android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_hola"
                 android:shadowRadius="5" />
 
             <EditText
@@ -92,7 +92,6 @@
                 android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_person"
-
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
                 android:hint="Ingrese si es Alabanza o Coro"
@@ -116,6 +115,7 @@
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
+                android:textAlignment="center"
                 android:text="Guardar"
                 android:textColor="#0A0A0A" />
 

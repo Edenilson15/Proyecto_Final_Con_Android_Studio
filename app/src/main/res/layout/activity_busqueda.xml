@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#3E3853"
+    android:background="#F1F0E5"
     tools:context=".busqueda">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -27,7 +27,7 @@
         android:fontFamily="serif-monospace"
         android:text="Himnario"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#1A1717"
         android:textSize="26dp"
         android:textStyle="bold" />
 

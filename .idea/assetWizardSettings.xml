@@ -5,44 +5,7 @@
       <map>
         <entry key="vectorWizard">
           <value>
-<<<<<<< HEAD
-            <PersistentState>
-              <option name="children">
-                <map>
-                  <entry key="vectorAssetStep">
-                    <value>
-                      <PersistentState>
-                        <option name="children">
-                          <map>
-                            <entry key="clipartAsset">
-                              <value>
-                                <PersistentState>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_queue_music_black_24dp.xml" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="color" value="1f1990" />
-                            <entry key="outputName" value="ic_genero" />
-                            <entry key="sourceFile" value="C:\Users\Shadows" />
-                          </map>
-                        </option>
-                      </PersistentState>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </PersistentState>
-=======
             <PersistentState />
->>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
           </value>
         </entry>
       </map>

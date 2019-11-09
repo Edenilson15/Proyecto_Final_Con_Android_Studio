@@ -2,14 +2,15 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
     <corners
         android:radius="28dp"
+
         />
     <gradient
         android:gradientRadius="0"
         android:centerX="35%"
         android:centerY="50%"
-        android:centerColor="#47A891"
+        android:centerColor="#1E9478"
         android:startColor="#111010"
-        android:endColor="#8E8894"
+        android:endColor="#ECE8C3"
         android:type="radial"
         />
     <padding

@@ -20,7 +20,7 @@
         android:fontFamily="serif-monospace"
         android:text="Himnario"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#161212"
         android:textSize="26dp"
         android:textStyle="bold" />
 
