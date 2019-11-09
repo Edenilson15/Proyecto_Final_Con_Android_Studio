@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E2D8AD"
+    android:background="#3E3853"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -18,7 +18,7 @@
         android:fontFamily="serif-monospace"
         android:text="Himnario"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#F1E4E4"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -46,25 +46,17 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
-<<<<<<< HEAD
                 android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_hola"
                 android:drawablePadding="5dp"
                 android:hint="Ingrese el código"
-=======
-                android:background="@drawable/estiloet2"
-                android:drawableStart="@drawable/ic_hola"
-                android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese su busqueda"
->>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
                 android:inputType="number"
                 android:paddingLeft="25dp"
                 android:shadowRadius="5" />
 
             <EditText
                 android:id="@+id/et_letra"
-<<<<<<< HEAD
                 android:layout_width="382dp"
                 android:layout_height="154dp"
                 android:layout_marginLeft="12dp"
@@ -74,18 +66,7 @@
                 android:drawableStart="@drawable/ic_music"
                 android:drawablePadding="5dp"
                 android:hint="Ingrese La Letra de Alabanza o Coro"
-=======
-                android:layout_width="match_parent"
-                android:layout_height="82dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="12dp"
-                android:background="@drawable/estiloet2"
-                android:drawableStart="@drawable/ic_descripcion"
-                android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese la descripción de la Alabanza"
->>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
                 android:paddingLeft="25dp" />
 
             <EditText
@@ -95,7 +76,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
-                android:background="@drawable/estiloet2"
+                android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_person"
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
@@ -109,19 +90,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
-<<<<<<< HEAD
-                android:inputType="textPersonName"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_genero"
-=======
                 android:layout_marginRight="12dp"
-                android:background="@drawable/estiloet2"
+                android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_person"
->>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
+
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese el Genero de la Alabanza o Coro"
+                android:hint="Ingrese si es Alabanza o Coro"
                 android:inputType="textPersonName"
                 android:paddingLeft="25dp" />
 
