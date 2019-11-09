@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#666356"
+    android:background="#E2D8AD"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -46,16 +46,25 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
+<<<<<<< HEAD
                 android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_hola"
                 android:drawablePadding="5dp"
                 android:hint="Ingrese el código"
+=======
+                android:background="@drawable/estiloet2"
+                android:drawableStart="@drawable/ic_hola"
+                android:drawablePadding="5dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese su busqueda"
+>>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
                 android:inputType="number"
                 android:paddingLeft="25dp"
                 android:shadowRadius="5" />
 
             <EditText
                 android:id="@+id/et_letra"
+<<<<<<< HEAD
                 android:layout_width="382dp"
                 android:layout_height="154dp"
                 android:layout_marginLeft="12dp"
@@ -65,37 +74,56 @@
                 android:drawableStart="@drawable/ic_music"
                 android:drawablePadding="5dp"
                 android:hint="Ingrese La Letra de Alabanza o Coro"
+=======
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/estiloet2"
+                android:drawableStart="@drawable/ic_descripcion"
+                android:drawablePadding="5dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese la descripción de la Alabanza"
+>>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
                 android:paddingLeft="25dp" />
 
             <EditText
                 android:id="@+id/et_autor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el Autor de la Alabanza o Coro"
-                android:layout_marginRight="12dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
-                android:inputType="textPersonName"
-                android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/estiloet2"
                 android:drawableStart="@drawable/ic_person"
                 android:drawablePadding="5dp"
-                />
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese el Autor de la Alabanza o Coro"
+                android:inputType="textPersonName"
+                android:paddingLeft="25dp" />
 
             <EditText
                 android:id="@+id/et_genero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el Genero de la Alabanza o Coro"
-                android:layout_marginRight="12dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
+<<<<<<< HEAD
                 android:inputType="textPersonName"
                 android:background="@drawable/estiloedittext"
                 android:paddingLeft="25dp"
                 android:drawableStart="@drawable/ic_genero"
+=======
+                android:layout_marginRight="12dp"
+                android:background="@drawable/estiloet2"
+                android:drawableStart="@drawable/ic_person"
+>>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
                 android:drawablePadding="5dp"
-                />
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese el Genero de la Alabanza o Coro"
+                android:inputType="textPersonName"
+                android:paddingLeft="25dp" />
 
 
             <Button
@@ -103,92 +131,92 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="30dp"
-                android:text="Guardar"
-                android:textColor="#0A0A0A"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
+                android:drawableRight="@drawable/ic_save"
+                android:drawablePadding="-140dp"
+                android:fontFamily="serif-monospace"
+                android:paddingRight="100dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:drawableRight="@drawable/ic_save"
-                android:paddingRight="100dp"
-                android:drawablePadding="-140dp"
-                />
+                android:text="Guardar"
+                android:textColor="#0A0A0A" />
 
             <Button
                 android:id="@+id/btn_consultaCodigo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Consultar por código"
-                android:textColor="#0E0D0D"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="-40dp"
+                android:fontFamily="serif-monospace"
+                android:paddingLeft="80dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:drawableStart="@drawable/ic_search"
-                android:paddingLeft="80dp"
-                android:drawablePadding="-40dp"
-                />
+                android:text="Consultar por código"
+                android:textColor="#0E0D0D" />
 
             <Button
                 android:id="@+id/btn_consultaDescripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Consultar por descrición"
-                android:textColor="#0A0A0A"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
                 android:drawableStart="@drawable/ic_search"
+                android:fontFamily="serif-monospace"
                 android:paddingLeft="50dp"
+                android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                />
+                android:text="Consultar por descrición"
+                android:textColor="#0A0A0A" />
 
             <Button
                 android:id="@+id/btn_eliminar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Borrar"
-                android:textColor="#070707"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
                 android:drawableRight="@drawable/ic_borrar"
-                android:paddingRight="100dp"
                 android:drawablePadding="-140dp"
+                android:fontFamily="serif-monospace"
+                android:paddingRight="100dp"
+                android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                />
+                android:text="Borrar"
+                android:textColor="#070707" />
 
             <Button
                 android:id="@+id/btn_actualizar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Editar"
-                android:textColor="#070707"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/estiloboton"
+                android:fontFamily="serif-monospace"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:layout_marginBottom="20dp"
-                />
+                android:text="Editar"
+                android:textColor="#070707" />
 
         </LinearLayout>
     </ScrollView>

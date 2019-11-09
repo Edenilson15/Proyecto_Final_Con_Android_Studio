@@ -5,6 +5,7 @@
       <map>
         <entry key="vectorWizard">
           <value>
+<<<<<<< HEAD
             <PersistentState>
               <option name="children">
                 <map>
@@ -39,6 +40,9 @@
                 </map>
               </option>
             </PersistentState>
+=======
+            <PersistentState />
+>>>>>>> 2157da702fedc9ff00b45cbf59a15df98645d99a
           </value>
         </entry>
       </map>
