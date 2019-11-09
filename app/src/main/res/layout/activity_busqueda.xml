@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E2D8AD"
+    android:background="#3E3853"
     tools:context=".busqueda">
 
     <com.google.android.material.appbar.AppBarLayout

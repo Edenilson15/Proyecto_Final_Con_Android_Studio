@@ -33,11 +33,10 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:src="@drawable/articulo"
+                android:layout_height="125dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:src="@drawable/articulo" />
 
             <EditText
                 android:id="@+id/et_codigo"
