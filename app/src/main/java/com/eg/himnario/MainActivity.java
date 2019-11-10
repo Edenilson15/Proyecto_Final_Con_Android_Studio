@@ -307,7 +307,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Que Buscas", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -352,6 +352,10 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
+            return true;
+        }else if(id == R.id.action_guardar){
+            Intent spinnerActivity = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(spinnerActivity);
             return true;
         }
 
