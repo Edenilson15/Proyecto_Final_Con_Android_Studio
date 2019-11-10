@@ -51,7 +51,7 @@
                 android:fontFamily="sans-serif-black"
                 android:inputType="number"
                 android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_hola"
+                android:drawableStart="@drawable/ic_cod"
                 android:shadowRadius="5" />
 
             <EditText
@@ -91,7 +91,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
-                android:drawableStart="@drawable/ic_person"
+                android:drawableStart="@drawable/ic_genero_musica"
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
                 android:hint="Ingrese si es Alabanza o Coro"
@@ -127,7 +127,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:drawableStart="@drawable/ic_search"
+                android:drawableStart="@drawable/ic_busc_cod"
                 android:drawablePadding="-40dp"
                 android:fontFamily="serif-monospace"
                 android:paddingLeft="80dp"
@@ -146,7 +146,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:drawableStart="@drawable/ic_search"
+                android:drawableStart="@drawable/ic_busc_desc"
                 android:fontFamily="serif-monospace"
                 android:paddingLeft="50dp"
                 android:shadowColor="#2314A8"
