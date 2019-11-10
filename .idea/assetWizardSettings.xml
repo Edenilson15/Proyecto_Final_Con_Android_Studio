@@ -19,8 +19,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_borrar" />
-                            <entry key="sourceFile" value="C:\Users\Mauricio\Desktop\proyecto final\Iconos\icons_final\SVG\trashcan.svg" />
+                            <entry key="outputName" value="ic_buscar" />
+                            <entry key="sourceFile" value="C:\Users\Mauricio\Desktop\proyecto final\Iconos\icons_final\SVG\search.svg" />
                           </map>
                         </option>
                       </PersistentState>

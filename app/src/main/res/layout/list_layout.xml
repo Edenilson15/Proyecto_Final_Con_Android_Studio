@@ -32,7 +32,7 @@
         android:layout_margin="0dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardBackgroundColor="#E4E9EC"
+        app:cardBackgroundColor="#80E4E9EC"
         app:cardCornerRadius="5dp"
         app:cardElevation="6dp"
         app:cardUseCompatPadding="true">
@@ -66,10 +66,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewCodigo"
                 android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="50dp"
+                android:background="#BEB48847"
                 android:layout_marginTop="1dp"
                 android:layout_toRightOf="@id/imageView"
                 android:text="1"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
 
             <TextView
                 android:id="@+id/textViewDescripcion"
@@ -79,8 +83,8 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="1dp"
                 android:layout_toRightOf="@id/imageView"
-                android:background="@color/colorPrimary"
                 android:fontFamily="sans-serif-black"
+                android:textColor="#000000"
                 android:paddingLeft="0dp"
                 android:paddingRight="15dp"
                 android:text="Actor"
@@ -94,11 +98,13 @@
                 android:layout_below="@id/textViewDescripcion"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="1dp"
+                android:background="#BEB48847"
+                android:paddingLeft="50dp"
                 android:layout_toRightOf="@id/imageView"
                 android:fontFamily="sans-serif-black"
                 android:text="Alex Zurdo"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textStyle="bold" />
+                 />
 
             <TextView
                 android:id="@+id/textViewgenero"
@@ -121,8 +127,11 @@
                 android:layout_marginTop="1dp"
                 android:layout_toRightOf="@id/imageView"
                 android:fontFamily="sans-serif-black"
+                android:background="#BEB48847"
+                android:paddingLeft="50dp"
                 android:text="Rock"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
 
 
         </RelativeLayout>
