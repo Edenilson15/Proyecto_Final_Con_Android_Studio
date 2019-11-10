@@ -104,18 +104,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:drawableRight="@drawable/ic_save"
-                android:drawablePadding="-140dp"
+                android:drawableStart="@drawable/ic_guardar"
                 android:fontFamily="serif-monospace"
-                android:paddingRight="100dp"
+                android:paddingLeft="50dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:textAlignment="center"
                 android:text="Guardar"
                 android:textColor="#0A0A0A" />
 
@@ -130,7 +128,7 @@
                 android:drawableStart="@drawable/ic_busc_cod"
                 android:drawablePadding="-40dp"
                 android:fontFamily="serif-monospace"
-                android:paddingLeft="80dp"
+                android:paddingLeft="50dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
@@ -164,16 +162,15 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:drawableRight="@drawable/ic_borrar"
-                android:drawablePadding="-140dp"
+                android:drawableStart="@drawable/ic_borrar"
                 android:fontFamily="serif-monospace"
-                android:paddingRight="100dp"
+                android:paddingLeft="50dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
                 android:text="Borrar"
-                android:textColor="#070707" />
+                android:textColor="#0A0A0A" />
 
             <Button
                 android:id="@+id/btn_actualizar"
@@ -182,15 +179,16 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginBottom="20dp"
                 android:background="@drawable/estiloboton"
+                android:drawableStart="@drawable/ic_edit"
                 android:fontFamily="serif-monospace"
+                android:paddingLeft="50dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
                 android:text="Editar"
-                android:textColor="#070707" />
+                android:textColor="#0A0A0A" />
 
         </LinearLayout>
     </ScrollView>
