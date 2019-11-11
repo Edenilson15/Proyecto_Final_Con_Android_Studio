@@ -1,7 +1,0 @@
-#Sat Nov 09 19:26:00 CST 2019
-base.0=C\:\\Users\\Mauricio\\Documents\\ciclo 4\\Prof. Manuel\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Users\\Mauricio\\Documents\\ciclo 4\\Prof. Manuel\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

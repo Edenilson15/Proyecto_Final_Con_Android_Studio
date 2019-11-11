@@ -1004,6 +1004,7 @@ drawable abc_vector_test
 drawable articulo
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
 drawable btn_estilo
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1017,11 +1018,17 @@ drawable estiloet2
 drawable ic_add_alert
 drawable ic_back
 drawable ic_borrar
+drawable ic_busc_cod
+drawable ic_busc_desc
 drawable ic_buscar
+drawable ic_busqueda
 drawable ic_close
+drawable ic_cod
 drawable ic_delete
 drawable ic_descripcion
+drawable ic_edit
 drawable ic_genero
+drawable ic_genero_musica
 drawable ic_guardar
 drawable ic_hola
 drawable ic_key
@@ -1205,6 +1212,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
@@ -2000,3 +2008,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml searchable

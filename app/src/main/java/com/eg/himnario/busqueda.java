@@ -39,7 +39,7 @@ public class busqueda extends ContentProvider {
                         .build();
 
                 try {
-                    Response response = client.newCall(request).execute(Cursor);
+                    Response response = client.newCall(request).execute();
                     String jsonString = response.toString();
                     JSONArray jsonArray = new JSONArray(jsonString);
 
