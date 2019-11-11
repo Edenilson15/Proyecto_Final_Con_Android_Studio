@@ -1,4 +1,4 @@
-package com.example.menu_buscar;
+package com.eg.himnario;
 
 import android.app.SearchManager;
 import android.content.ContentProvider;
@@ -23,7 +23,8 @@ public class busqueda extends ContentProvider {
 
         List<String> cities;
 
-        @Override
+
+    @Override
         public boolean onCreate() {
             return false;
         }
@@ -38,8 +39,8 @@ public class busqueda extends ContentProvider {
                         .build();
 
                 try {
-                    Response response = client.newCall(request).execute();
-                    String jsonString = response.toString().string();
+                    Response response = client.newCall(request).execute(Cursor);
+                    String jsonString = response.toString();
                     JSONArray jsonArray = new JSONArray(jsonString);
 
                     cities = new ArrayList<>();
