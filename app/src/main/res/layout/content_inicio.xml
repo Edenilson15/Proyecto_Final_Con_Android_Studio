@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Inicio"
     tools:showIn="@layout/activity_inicio">
@@ -56,14 +57,14 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/estiloboton"
-        android:drawableStart="@drawable/ic_busc_desc"
+        android:drawableStart="@drawable/ic_person"
         android:fontFamily="serif-monospace"
         android:paddingLeft="50dp"
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
         android:shadowRadius="8"
-        android:text="Consultar por Nombre"
+        android:text="Consultar por Autor"
         android:textColor="#0A0A0A" />
 
 
