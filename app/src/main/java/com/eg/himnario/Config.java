@@ -27,7 +27,8 @@ public class Config {
     public static final String urlConsultaApiPDO = "http://localhost/conexion/buscarAll.php";                       //Ver todos los registros DB.
 
     public static final String urlConsultaCodigo = "http://localhost/conexion/buscarArticulosCodigo.php";            //Busquedas por código.
-    public static final String urlConsultaDescripcion = "http://localhost/conexion/buscarArticulosDescripcion.php";  //Busquedas por descripción.
+
+   public static final String urlbuscarhimnario = "http://localhost/conexion/buscarhimnario.php";//Busquedas por descripción.
     public static final String urlConsultaAllArticulos = "http://localhost/conexion/buscarArticulos.php";            //Devuelve todos los registros de la tabla MySQL.
 
 
