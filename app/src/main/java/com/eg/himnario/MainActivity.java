@@ -359,8 +359,7 @@ public class MainActivity extends AppCompatActivity {
             et_genero.setText(null);
             return true;
         }else if(id == R.id.action_listaArticulos){
-        Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
-        startActivity(spinnerActivity);
+            Toast.makeText(this, "Hola funciona", Toast.LENGTH_SHORT).show();
         return true;
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
@@ -370,8 +369,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(spinnerActivity);
             return true;
         }else if(id == R.id.action_Inicio){
-            Intent Activity = new Intent(MainActivity.this, Inicio.class);
-            startActivity(Activity);
+            Toast.makeText(this, "Hola funciona", Toast.LENGTH_SHORT).show();
             return true;
         }
 
