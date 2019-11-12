@@ -369,7 +369,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(spinnerActivity);
             return true;
         }else if(id == R.id.action_Inicio){
-            Toast.makeText(this, "Hola funciona", Toast.LENGTH_SHORT).show();
+            Intent spinnerActivity = new Intent(MainActivity.this, Inicio.class);
+            startActivity(spinnerActivity);
             return true;
         }
 

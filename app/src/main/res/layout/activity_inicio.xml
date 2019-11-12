@@ -15,7 +15,6 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
-        layout="@layout/content_inicio"
-        android:layout_height="804dp" />
+        layout="@layout/content_inicio" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
