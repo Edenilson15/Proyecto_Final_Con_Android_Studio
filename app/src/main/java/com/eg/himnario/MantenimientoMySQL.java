@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
 import android.os.Build;
 import android.view.Gravity;
 import android.widget.Toast;
@@ -64,7 +63,7 @@ public class MantenimientoMySQL {
     //List<> productosList;
     ProductsAdapter adapter;
 
-    public void guardar(final Context context, final String codigo, final String letra, final String genero , final String autor){
+    public void guardar(final Context context, final String codigo, final String letra, final String genero , final String autor, final String nombre){
         String url = Config.urlGuardar;
         //String url = "localhost/democrudsis21a/guardar.php";
         StringRequest request = new StringRequest(Request.Method.POST, url,
@@ -108,6 +107,7 @@ public class MantenimientoMySQL {
                 map.put("codigo", codigo);
                 map.put("letra", letra);
                 map.put("genero",genero );
+                map.put("nombre",nombre);
                 map.put("autor",autor );
                 return map;
             }
@@ -118,7 +118,7 @@ public class MantenimientoMySQL {
     }
 
 
-    public boolean guardar1(final Context context, final String codigo, final String letra, final String genero , final String autor){
+    public boolean guardar1(final Context context, final String codigo, final String letra, final String genero , final String autor, final String nombre){
         //String url = "http://mjgl.com.sv/mysqlcrud/guardar.php";
         String url  = Config.urlGuardar;
         StringRequest request = new StringRequest(Request.Method.POST, url,
@@ -166,6 +166,7 @@ public class MantenimientoMySQL {
                 map.put("codigo", codigo);
                 map.put("letra", letra);
                 map.put("genero",genero );
+                map.put("nombre",nombre);
                 map.put("autor",autor );
                 return map;
             }
@@ -293,6 +294,7 @@ public class MantenimientoMySQL {
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
                                 String letra = jsonArray.getJSONObject(0).getString("letra");
                                 String autor = jsonArray.getJSONObject(0).getString("autor");
+                                String nombre = jsonArray.getJSONObject(0).getString("nombre");
                                 String genero = jsonArray.getJSONObject(0).getString("genero");
 
 
@@ -300,6 +302,7 @@ public class MantenimientoMySQL {
                                 intent.putExtra("senal", "1");
                                 intent.putExtra("codigo", codigo.toString());
                                 intent.putExtra("letra", letra);
+                                intent.putExtra("nombre", nombre);
                                 intent.putExtra("autor", autor);
                                 intent.putExtra("genero", genero);
                                 context.startActivity(intent);
@@ -363,6 +366,7 @@ public class MantenimientoMySQL {
                                 JSONArray jsonArray = new JSONArray(response);
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
                                 String letra = jsonArray.getJSONObject(0).getString("descripcion");
+                                String nombre = jsonArray.getJSONObject(0).getString("nombre");
                                 String autor = jsonArray.getJSONObject(0).getString("autor");
                                 String genero = jsonArray.getJSONObject(0).getString("genero");
 
@@ -370,12 +374,14 @@ public class MantenimientoMySQL {
                                datos.setLetra(letra);
                                datos.setGenero(genero);
                                 datos.setAutor(autor);
+                                datos.setNombre(nombre);
 
                                 Intent intent = new Intent(context, MainActivity.class);
                                 intent.putExtra("senal", "1");
                                 intent.putExtra("codigo", codigo.toString());
                                 intent.putExtra("letra", letra);
                                 intent.putExtra("autor", autor);
+                                intent.putExtra("nombre", nombre);
                                 intent.putExtra("genero", genero);
                                 //intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                                 context.startActivity(intent);
@@ -441,8 +447,9 @@ public class MantenimientoMySQL {
                                 String letra = articulosObject.getString("letra");
                                 String genero = articulosObject.getString("genero");
                                 String autor = articulosObject.getString("autor");
+                                String nombre = articulosObject.getString("nombre");
                                 String img = articulosObject.getString("imagen");
-                                Productos objeto = new Productos(codigo, letra,autor, genero, img);
+                                Productos objeto = new Productos(codigo, letra,autor, genero,nombre, img);
                                 productosList.add(objeto);
 
                                 /*
@@ -535,6 +542,7 @@ public class MantenimientoMySQL {
                 map.put("Accept", "application/json");
                 map.put("codigo", String.valueOf(datos.getCodigo()));
                 map.put("letra", datos.getLetra());
+                map.put("nombre", datos.getNombre());
                 map.put("genero", datos.getGenero());
                 map.put("autor", datos.getAutor());
 
@@ -557,12 +565,13 @@ public class MantenimientoMySQL {
         info = "Codigo = "+datos.getCodigo() + "\n" ;
         info += "letra = "+datos.getLetra() + "\n";
         info += "genero = "+datos.getGenero() + "\n";
+        info += "nombre = "+datos.getNombre() + "\n";
         info += "autor = "+datos.getAutor() + "\n";
         return info;
     }
 
 
-    public void createfile(Context context, String codigo, String letra, String autor, String genero){
+    public void createfile(Context context, String codigo, String letra, String autor, String genero,String nombre){
         SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
         //OBTENIENDO LA FECHA Y HORA ACTUAL DEL SISTEMA.
         DateFormat formatodate= new SimpleDateFormat("yyyy/MM/dd");
@@ -574,6 +583,7 @@ public class MantenimientoMySQL {
         editor.putString("hora", time);
         editor.putString("codigo", codigo);
         editor.putString("letra", letra);
+        editor.putString("nombre", nombre);
         editor.putString("autor", autor);
         editor.putString("genero", genero);
         editor.commit();

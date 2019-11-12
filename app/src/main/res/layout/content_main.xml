@@ -40,32 +40,46 @@
 
             <EditText
                 android:id="@+id/et_codigo"
-                android:layout_width="392dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/estiloedittext"
+                android:drawableStart="@drawable/ic_cod"
                 android:drawablePadding="5dp"
-                android:hint="Ingrese el código"
                 android:fontFamily="sans-serif-black"
+                android:hint="Ingrese el código"
                 android:inputType="number"
                 android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_cod"
                 android:shadowRadius="5" />
 
             <EditText
                 android:id="@+id/et_letra"
-                android:layout_width="382dp"
-                android:layout_height="154dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
                 android:drawableStart="@drawable/ic_music"
                 android:drawablePadding="5dp"
-                android:hint="Ingrese La Letra de Alabanza o Coro"
                 android:fontFamily="sans-serif-black"
+                android:hint="Ingrese La Letra de Alabanza o Coro"
+                android:paddingLeft="25dp" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/estiloedittext"
+                android:drawableStart="@drawable/ic_music"
+                android:drawablePadding="5dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese el Nombre de Alabanza o Coro"
                 android:paddingLeft="25dp" />
 
             <EditText

@@ -72,9 +72,9 @@ public class Consulta_RecyclerView extends AppCompatActivity {
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
         toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
         toolbar.setTitleMargin(0, 0, 0, 0);
-        toolbar.setSubtitle("Consulta de Artículos");
+        toolbar.setSubtitle("LIsta de Alabanzas");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
-        toolbar.setTitle("Prof. Gámez");
+        toolbar.setTitle("Himnario");
         setSupportActionBar(toolbar);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -132,6 +132,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
                                         articulosObject.getInt("codigo"),
                                         articulosObject.getString("letra"),
                                         articulosObject.getString("autor"),
+                                        articulosObject.getString("nombre"),
                                         articulosObject.getString("genero"),
                                         articulosObject.getString("imagen")
                                 ));
@@ -185,7 +186,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_recycler_view, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

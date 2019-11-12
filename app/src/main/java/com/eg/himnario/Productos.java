@@ -5,6 +5,16 @@ public class Productos {
     String letra;
     String Actor;
     String genero;
+    String nombre;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     String imagen;
 
     public String getLetra() {
@@ -48,7 +58,7 @@ public class Productos {
         this.imagen = imagen;
     }
 
-    public Productos(int codigo, String letra,String actor, String genero, String imagen) {
+    public Productos(int codigo, String letra,String actor, String genero, String imagen,String nombre) {
         this.codigo = codigo;
         this.letra= letra;
         Actor = actor;

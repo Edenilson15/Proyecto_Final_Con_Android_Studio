@@ -27,6 +27,11 @@
         android:orderInCategory="4"
         android:title="@string/Guardar"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Inicio"
+        android:orderInCategory="4"
+        android:title="Inicio"
+        app:showAsAction="never" />
 
     <!--<item
         android:id="@+id/action_listaArticulos1"

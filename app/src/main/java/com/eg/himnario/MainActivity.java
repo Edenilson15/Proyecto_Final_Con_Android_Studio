@@ -5,16 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.tabs.TabLayout;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.Toolbar;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,20 +14,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 
 public class MainActivity extends AppCompatActivity {
-    private EditText et_codigo, et_letra, et_genero,et_autor;
+    private EditText et_codigo, et_letra, et_genero,et_autor, et_nombre;
     private Button btn_guardar, btn_consultaCodigo, btn_consultaDescripcion, btn_eliminar, btn_actualizar;
 
     boolean inputEt=false;
     boolean inputEd=false;
     boolean input1=false;
     boolean input2=false;
+    boolean input3=false;
     int resultadoInsert=0;
 
     String senal = "";
     String codigo = "";
     String letra = "";
+    String nombre = "";
     String autor = "";
     String genero = "";
 
@@ -91,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         et_codigo = (EditText) findViewById(R.id.et_codigo);
         et_letra = (EditText) findViewById(R.id.et_letra);
         et_autor = (EditText) findViewById(R.id.et_autor);
+        et_nombre = (EditText) findViewById(R.id.et_nombre);
         et_genero = (EditText) findViewById(R.id.et_genero);
         btn_guardar = (Button) findViewById(R.id.btn_guardar);
         btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
@@ -118,11 +118,13 @@ public class MainActivity extends AppCompatActivity {
                 senal = bundle.getString("senal");
                 codigo = bundle.getString("codigo");
                 letra = bundle.getString("letra");
+                nombre = bundle.getString("nombre");
                 genero = bundle.getString("genero");
                 autor = bundle.getString("autor");
                 if (senal.equals("1")) {
                     et_codigo.setText(codigo);
                     et_letra.setText(letra);
+                    et_nombre.setText(nombre);
                     et_autor.setText(autor);
                     et_genero.setText(genero);
                     //finish();
@@ -159,6 +161,12 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     input1=true;
                 }
+                if(et_nombre.getText().toString().length()==0){
+                    et_nombre.setError("Campo obligatorio");
+                    input3 = false;
+                }else {
+                    input3=true;
+                }
                 if(et_genero.getText().toString().length()==0){
                     et_genero.setError("Campo obligatorio");
                     input2 = false;
@@ -166,12 +174,13 @@ public class MainActivity extends AppCompatActivity {
                     input2=true;
                 }
 
-                if (inputEt && inputEd && input1 && input2){
+                if (inputEt && inputEd && input1 && input2&& input3){
                     String codigo = et_codigo.getText().toString();
                     String letra = et_letra.getText().toString();
                     String autor = et_autor.getText().toString();
+                    String nombre = et_nombre.getText().toString();
                     String genero = et_genero.getText().toString();
-                    manto.guardar(MainActivity.this, codigo, letra, autor, genero );
+                    manto.guardar(MainActivity.this, codigo, letra, autor,nombre, genero);
 
                     limpiarDatos();
                     et_codigo.requestFocus();
@@ -287,11 +296,13 @@ public class MainActivity extends AppCompatActivity {
                     String cod = et_codigo.getText().toString();
                     String letra = et_letra.getText().toString();
                     String autor = et_autor.getText().toString();
+                    String nombre = et_nombre.getText().toString();
                     String genero = et_genero.getText().toString();
 
                     datos.setCodigo(Integer.parseInt(cod));
                     datos.setLetra(letra);
                     datos.setAutor(autor);
+                    datos.setNombre(nombre);
                     datos.setGenero(genero);
 
                     manto.modificar(MainActivity.this, datos);
@@ -344,18 +355,23 @@ public class MainActivity extends AppCompatActivity {
             et_codigo.setText(null);
             et_letra.setText(null);
             et_autor.setText(null);
+            et_nombre.setText(null);
             et_genero.setText(null);
             return true;
         }else if(id == R.id.action_listaArticulos){
-            Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
-            startActivity(spinnerActivity);
-            return true;
+        Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
+        startActivity(spinnerActivity);
+        return true;
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
             return true;
         }else if(id == R.id.action_guardar){
             Intent spinnerActivity = new Intent(MainActivity.this, MainActivity.class);
             startActivity(spinnerActivity);
+            return true;
+        }else if(id == R.id.action_Inicio){
+            Intent Activity = new Intent(MainActivity.this, Inicio.class);
+            startActivity(Activity);
             return true;
         }
 
@@ -408,6 +424,7 @@ public class MainActivity extends AppCompatActivity {
                         String cod = getSharedCodigo(MainActivity.this);
                         String le = getSharedLetra(MainActivity.this);
                         String au = getSharedAutor(MainActivity.this);
+                        String nom = getSharedNombre(MainActivity.this);
                         String gene = getSharedGenero(MainActivity.this);
 
                         et_codigo.setText(cod);
@@ -452,7 +469,11 @@ public class MainActivity extends AppCompatActivity {
         String genero = preferences.getString("genero","Sin letra");
         return genero;   //return preferences.getString("tiempo", "Sin configurar.");
     }
-
+    public String getSharedNombre(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences("Himnario", MODE_PRIVATE);
+        String nombre = preferences.getString("nombre","Sin letra");
+        return nombre;   //return preferences.getString("tiempo", "Sin configurar.");
+    }
 
 
 }

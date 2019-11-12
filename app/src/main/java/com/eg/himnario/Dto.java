@@ -7,6 +7,16 @@ public class Dto {
     String autor;
     String letra;
     String genero;
+    String nombre;
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -43,6 +53,7 @@ public class Dto {
         this.codigo=codigo;
         this.autor = autor;
         this.letra = letra;
+        this.nombre = nombre;
         this.genero = genero;
     }
 }
