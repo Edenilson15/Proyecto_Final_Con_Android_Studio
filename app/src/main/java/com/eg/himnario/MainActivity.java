@@ -359,7 +359,8 @@ public class MainActivity extends AppCompatActivity {
             et_genero.setText(null);
             return true;
         }else if(id == R.id.action_listaArticulos){
-            Toast.makeText(this, "Hola funciona", Toast.LENGTH_SHORT).show();
+            Intent spinnerActivity = new Intent(MainActivity.this, Consulta_RecyclerView.class);
+            startActivity(spinnerActivity);
         return true;
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
