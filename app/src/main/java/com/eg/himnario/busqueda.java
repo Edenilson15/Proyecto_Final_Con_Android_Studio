@@ -29,9 +29,6 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class busqueda {
 
-
-
-
         Dto datos = new Dto();
 
         boolean estadoGuardar = false;

@@ -9,21 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Consulta_RecyclerView"
+        <activity android:name=".mostrarNumero"></activity>
+        <activity android:name=".NumeroHimno" />
+        <activity
+            android:name=".Consulta_RecyclerView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inicio"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".Inicio"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

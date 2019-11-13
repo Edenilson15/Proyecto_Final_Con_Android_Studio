@@ -1104,7 +1104,6 @@ id beginning
 id blocking
 id bottom
 id btn_actualizar
-id btn_consultaCodigo
 id btn_consultaDescripcion
 id btn_consultaNumero
 id btn_consultaporNombre
@@ -1343,6 +1342,8 @@ layout activity_busqueda
 layout activity_consulta__recycler_view
 layout activity_inicio
 layout activity_main
+layout activity_mostrar_numero
+layout activity_numero_himno
 layout content_inicio
 layout content_main
 layout design_bottom_navigation_item

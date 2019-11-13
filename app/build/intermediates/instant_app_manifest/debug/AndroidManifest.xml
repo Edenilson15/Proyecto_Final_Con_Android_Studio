@@ -19,10 +19,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.eg.himnario.mostrarNumero" />
+        <activity android:name="com.eg.himnario.NumeroHimno" />
         <activity
             android:name="com.eg.himnario.Consulta_RecyclerView"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.eg.himnario.Inicio"
             android:theme="@style/AppTheme.NoActionBar" >

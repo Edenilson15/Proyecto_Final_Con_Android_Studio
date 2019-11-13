@@ -8,57 +8,57 @@
     android:orientation="vertical"
     tools:context=".busqueda">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+      <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/articulo" />
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="100dp"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="10dp"
+                 android:src="@drawable/articulo" />
 
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="15dp"
+             <ListView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginRight="15dp"
 
-                />
+                 />
 
-        </LinearLayout>
-    </ScrollView>
+         </LinearLayout>
+     </ScrollView>
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="serif-monospace"
-        android:text="Himnario"
-        android:textAlignment="center"
-        android:textColor="#1A1717"
-        android:textSize="26dp"
-        android:textStyle="bold" />
+     <TextView
+         android:id="@+id/tv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:fontFamily="serif-monospace"
+         android:text="Himnario"
+         android:textAlignment="center"
+         android:textColor="#1A1717"
+         android:textSize="26dp"
+         android:textStyle="bold" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#000"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         android:background="#000"
+         app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay" />
+     <com.google.android.material.appbar.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/AppTheme.AppBarOverlay" />
 
-</LinearLayout>
+ </LinearLayout>

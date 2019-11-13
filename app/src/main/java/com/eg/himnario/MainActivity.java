@@ -87,16 +87,16 @@ public class MainActivity extends AppCompatActivity {
         ///y esto para pantalla completa (oculta incluso la barra de estado)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        et_codigo = (EditText) findViewById(R.id.et_codigo);
-        et_letra = (EditText) findViewById(R.id.et_letra);
-        et_autor = (EditText) findViewById(R.id.et_autor);
-        et_nombre = (EditText) findViewById(R.id.et_nombre);
-        et_genero = (EditText) findViewById(R.id.et_genero);
-        btn_guardar = (Button) findViewById(R.id.btn_guardar);
-        btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
-        btn_consultaDescripcion = (Button) findViewById(R.id.btn_consultaDescripcion);
-        btn_eliminar = (Button) findViewById(R.id.btn_eliminar);
-        btn_actualizar = (Button) findViewById(R.id.btn_actualizar);
+        et_codigo = findViewById(R.id.et_codigo);
+        et_letra = findViewById(R.id.et_letra);
+        et_autor = findViewById(R.id.et_autor);
+        et_nombre = findViewById(R.id.et_nombre);
+        et_genero =  findViewById(R.id.et_genero);
+        btn_guardar =  findViewById(R.id.btn_guardar);
+       // btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
+        btn_consultaDescripcion = findViewById(R.id.btn_consultaDescripcion);
+        btn_eliminar = findViewById(R.id.btn_eliminar);
+        btn_actualizar = findViewById(R.id.btn_actualizar);
         //tv_resultado = (TextView) findViewById(R.id.tv_resultado);
 
 
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btn_consultaCodigo.setOnClickListener(new View.OnClickListener() {
+      /*  btn_consultaCodigo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+*/
 
         btn_consultaDescripcion.setOnClickListener(new View.OnClickListener() {
             @Override

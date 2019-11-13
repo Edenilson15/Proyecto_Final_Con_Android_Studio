@@ -45,6 +45,7 @@
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
+        android:onClick="numerohimno"
         android:shadowRadius="8"
         android:text="Consultar por Numero"
         android:textColor="#0E0D0D" />

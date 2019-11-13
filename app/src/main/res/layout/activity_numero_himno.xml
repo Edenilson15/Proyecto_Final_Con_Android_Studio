@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.eg.himnario.NumeroHimno">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Himnario"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/articulo" />
+
+    <EditText
+        android:id="@+id/et_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/estiloedittext"
+        android:drawableStart="@drawable/ic_genero_musica"
+        android:drawablePadding="5dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Ingrese el numero a buscar"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp" />
+
+
+    <Button
+        android:id="@+id/btn_consultaNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/estiloboton"
+        android:drawableStart="@drawable/ic_guardar"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="50dp"
+        android:shadowColor="#2314A8"
+        android:shadowDx="-3"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="Consultar"
+        android:textColor="#0A0A0A" />
+</LinearLayout>
