@@ -330,6 +330,7 @@ public class MainActivity extends AppCompatActivity {
         et_codigo.setText(null);
         et_letra.setText(null);
         et_autor.setText(null);
+        et_nombre.setText(null);
         et_genero.setText(null);
     }
 

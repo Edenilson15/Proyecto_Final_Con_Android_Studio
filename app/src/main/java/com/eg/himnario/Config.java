@@ -18,7 +18,7 @@ public class Config {
 
     //URL PARA ACCESO A BASE DE DATOS LOCAL MYSQL.
     //public static final String urlGuardar = "http://localhost/conexion/guardar.php";                               //Guardar datos DB.
-    public static final String urlGuardar = "http://localhost/conexion/guardar.php";                               //Guardar datos DB.
+    public static final String urlGuardar = "http://192.168.43.135/conexion/guardar.php";                               //Guardar datos DB.
 
     public static final String urlEliminar = "http://localhost/conexion/eliminar.php";                             //Eliminar datos DB.
     public static final String urlActualizar = "http://localhost/conexion/actualizar.php";                          //Actualizar datos DB.
@@ -28,7 +28,7 @@ public class Config {
 
     public static final String urlConsultaCodigo = "http://localhost/conexion/buscarArticulosCodigo.php";            //Busquedas por código.
 
-   public static final String urlbuscarhimnario = "http://localhost/conexion/buscarhimnario.php";//Busquedas por descripción.
+   public static final String urlbuscarhimnario = "http://localhost/conexion/buscarhimnario.php";//Busquedas por el nombre de la Cancion.
     public static final String urlConsultaAllArticulos = "http://localhost/conexion/buscarArticulos.php";            //Devuelve todos los registros de la tabla MySQL.
 
 

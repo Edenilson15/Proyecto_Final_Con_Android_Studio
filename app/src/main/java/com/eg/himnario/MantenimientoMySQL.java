@@ -344,7 +344,7 @@ public class MantenimientoMySQL {
         progressDialog.setMessage("Espere por favor, Estamos trabajando en su petición en el servidor");
         progressDialog.show();
 
-        String url  = Config.urlConsultaDescripcion;
+        String url  = Config.urlbuscarhimnario;
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 url,
@@ -365,7 +365,7 @@ public class MantenimientoMySQL {
                                 */
                                 JSONArray jsonArray = new JSONArray(response);
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
-                                String letra = jsonArray.getJSONObject(0).getString("descripcion");
+                                String letra = jsonArray.getJSONObject(0).getString("letra");
                                 String nombre = jsonArray.getJSONObject(0).getString("nombre");
                                 String autor = jsonArray.getJSONObject(0).getString("autor");
                                 String genero = jsonArray.getJSONObject(0).getString("genero");
