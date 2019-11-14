@@ -108,7 +108,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
 
 
     private void loadProductos() {
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
