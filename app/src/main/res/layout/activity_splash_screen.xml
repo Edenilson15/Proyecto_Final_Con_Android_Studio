@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ITCA-FEPADE"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/itca2" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Desarrolladores:"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text=" Ricardo Edenilson Mauricio
+        Maria de Jesus Cortez Alvarez
+        Brenda Estefany Canales Diaz
+        Mauricio Enrrique Umaña"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Instructor:"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Manuel de Jesus Gamez"
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold" />
 
 </LinearLayout>
+
+
+
+
