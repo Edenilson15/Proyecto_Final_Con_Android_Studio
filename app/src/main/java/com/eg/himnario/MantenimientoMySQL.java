@@ -448,8 +448,7 @@ public class MantenimientoMySQL {
                                 String genero = articulosObject.getString("genero");
                                 String autor = articulosObject.getString("autor");
                                 String nombre = articulosObject.getString("nombre");
-                                String img = articulosObject.getString("imagen");
-                                Productos objeto = new Productos(codigo, letra,autor, genero,nombre, img);
+                                Productos objeto = new Productos(codigo, letra,autor, genero,nombre);
                                 productosList.add(objeto);
 
                                 /*

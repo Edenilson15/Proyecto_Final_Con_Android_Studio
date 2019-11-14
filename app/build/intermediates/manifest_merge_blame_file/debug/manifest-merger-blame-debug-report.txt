@@ -13,61 +13,67 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:4:5-67
 11-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:4:22-64
-12
-13    <application
-13-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:6:5-31:19
-14        android:allowBackup="true"
-14-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:7:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.1] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:8:9-43
-18        android:label="@string/app_name"
-18-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:9:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:10:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:11:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:12:9-40
-23        <activity android:name="com.eg.himnario.mostrarNumero" />
-23-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:13:9-60
-23-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:13:19-48
-24        <activity android:name="com.eg.himnario.NumeroHimno" />
-24-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:14:9-49
-24-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:14:19-46
-25        <activity
-25-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:9-16:58
-26            android:name="com.eg.himnario.Consulta_RecyclerView"
-26-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:19-56
-27            android:theme="@style/AppTheme.NoActionBar" />
-27-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:16:13-56
-28        <activity
-28-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:17:9-21:20
-29            android:name="com.eg.himnario.Inicio"
-29-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:18:13-35
-30            android:theme="@style/AppTheme.NoActionBar" >
-30-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:13-56
-31        </activity>
-32        <activity
-32-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:22:9-30:20
-33            android:name="com.eg.himnario.MainActivity"
-33-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:23:13-41
-34            android:theme="@style/AppTheme.NoActionBar" >
-34-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:24:13-56
-35            <intent-filter>
-35-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:25:13-29:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:17-69
-36-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:17-77
-38-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:27-74
-39            </intent-filter>
-40        </activity>
-41    </application>
-42
-43</manifest>
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:5:5-75
+12-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:5:22-73
+13    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+13-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:6:5-85
+13-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:6:22-83
+14
+15    <application
+15-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:8:5-33:19
+16        android:allowBackup="true"
+16-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:9:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\Shadows\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:14:9-40
+25        <activity android:name="com.eg.himnario.mostrarNumero" />
+25-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:9-60
+25-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:19-48
+26        <activity android:name="com.eg.himnario.NumeroHimno" />
+26-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:16:9-49
+26-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:16:19-46
+27        <activity
+27-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:17:9-18:58
+28            android:name="com.eg.himnario.Consulta_RecyclerView"
+28-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:17:19-56
+29            android:theme="@style/AppTheme.NoActionBar" />
+29-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:18:13-56
+30        <activity
+30-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:9-23:20
+31            android:name="com.eg.himnario.Inicio"
+31-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:20:13-35
+32            android:theme="@style/AppTheme.NoActionBar" >
+32-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:21:13-56
+33        </activity>
+34        <activity
+34-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:24:9-32:20
+35            android:name="com.eg.himnario.MainActivity"
+35-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:25:13-41
+36            android:theme="@style/AppTheme.NoActionBar" >
+36-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:13-56
+37            <intent-filter>
+37-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:27:13-31:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:17-69
+38-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:30:17-77
+40-->C:\Users\Shadows\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:30:27-74
+41            </intent-filter>
+42        </activity>
+43    </application>
+44
+45</manifest>
