@@ -1344,7 +1344,9 @@ layout activity_busqueda
 layout activity_consulta__recycler_view
 layout activity_inicio
 layout activity_main
+layout activity_mostrar_autor
 layout activity_mostrar_numero
+layout activity_nombre_autor
 layout activity_numero_himno
 layout activity_splash_screen
 layout content_inicio

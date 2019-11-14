@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 public class Inicio extends AppCompatActivity {
-private  Button btn_consultaNumero;
+private  Button btn_consultaNumero, btn_consultaporNombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ private  Button btn_consultaNumero;
         setSupportActionBar(toolbar);
 
         btn_consultaNumero = findViewById(R.id.btn_consultaNumero);
-
+        btn_consultaporNombre = findViewById(R.id.btn_consultaporNombre);
 
         }
 
@@ -37,6 +37,9 @@ private  Button btn_consultaNumero;
 
     }
 
-
+    public void nombreAutor(View view){
+        Intent i = new Intent(this, NombreAutor.class );
+        startActivity(i);
+    }
 
 }

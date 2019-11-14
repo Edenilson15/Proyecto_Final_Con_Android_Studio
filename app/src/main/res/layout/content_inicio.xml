@@ -64,6 +64,7 @@
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
+        android:onClick="nombreAutor"
         android:shadowRadius="8"
         android:text="Consultar por Autor"
         android:textColor="#0A0A0A" />
