@@ -337,7 +337,7 @@ public class MantenimientoMySQL {
     }
 
 
-    public void consultarDescripcion(final Context context, final String autor){
+    public void consultarAutor(final Context context, final String autor){
 
         progressDialog = new ProgressDialog(context);
         progressDialog.setCancelable(false);

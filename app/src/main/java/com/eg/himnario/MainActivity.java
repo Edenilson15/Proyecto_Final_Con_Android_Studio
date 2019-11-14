@@ -24,7 +24,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et_codigo, et_letra, et_genero,et_autor, et_nombre;
-    private Button btn_guardar, btn_consultaCodigo, btn_consultaDescripcion, btn_eliminar, btn_actualizar;
+    private Button btn_guardar, btn_eliminar, btn_actualizar;//btn_consultaCodigo, btn_consultaDescripcion,
 
     boolean inputEt=false;
     boolean inputEd=false;
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         et_genero =  findViewById(R.id.et_genero);
         btn_guardar =  findViewById(R.id.btn_guardar);
        // btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
-        btn_consultaDescripcion = findViewById(R.id.btn_consultaDescripcion);
+        //btn_consultaDescripcion = findViewById(R.id.btn_consultaDescripcion);
         btn_eliminar = findViewById(R.id.btn_eliminar);
         btn_actualizar = findViewById(R.id.btn_actualizar);
         //tv_resultado = (TextView) findViewById(R.id.tv_resultado);
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-*/
+
 
         btn_consultaDescripcion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+*/
 
         btn_actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
