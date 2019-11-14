@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eg.himnario">
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -12,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mostrarNumero"></activity>
+        <activity android:name=".MostrarAutor"></activity>
+        <activity android:name=".NombreAutor" />
+        <activity android:name=".mostrarNumero" />
         <activity android:name=".NumeroHimno" />
-        <activity android:name=".Consulta_RecyclerView"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Consulta_RecyclerView"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Inicio"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,5 +29,9 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 </manifest>
