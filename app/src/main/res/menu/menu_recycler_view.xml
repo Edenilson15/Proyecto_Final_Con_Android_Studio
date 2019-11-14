@@ -9,4 +9,15 @@
             android:title="@string/salir"
             app:showAsAction="never" />
 
+        <item
+            android:id="@+id/action_guardar"
+            android:orderInCategory="4"
+            android:title="@string/Guardar"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_Inicio"
+            android:orderInCategory="4"
+            android:title="Inicio"
+            app:showAsAction="never" />
+
 </menu>

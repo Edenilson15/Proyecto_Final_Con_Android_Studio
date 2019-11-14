@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-        <item android:id="@+id/search"
-            android:title=""
-            android:icon="@drawable/ic_busqueda"
-            app:showAsAction="collapseActionView|ifRoom"
-            app:actionViewClass="android.widget.SearchView"
-            />
 
+        <item
+            android:id="@+id/action_limpiar"
+            android:orderInCategory="1"
+            android:title="@string/action_settings"
+            app:showAsAction="never" />
 
+        <item
+            android:id="@+id/action_listaArticulos"
+            android:icon="@drawable/ic_view"
+            android:orderInCategory="2"
+            android:title="@string/listarticulos1"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/action_salir"
+            android:icon="@drawable/ic_close"
+            android:orderInCategory="3"
+            android:title="@string/salir"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_guardar"
+            android:orderInCategory="4"
+            android:title="@string/Guardar"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_Inicio"
+            android:orderInCategory="4"
+            android:title="Inicio"
+            app:showAsAction="never" />
+
+        <!--<item
+            android:id="@+id/action_listaArticulos1"
+            android:icon="@drawable/ic_view"
+            android:orderInCategory="3"
+            android:title="@string/listarticulos1"
+            app:showAsAction="always" />-->
 
 </menu>
