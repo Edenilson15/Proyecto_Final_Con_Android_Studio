@@ -58,10 +58,11 @@ public class Productos {
         this.imagen = imagen;
     }
 
-    public Productos(int codigo, String letra,String actor, String genero, String imagen,String nombre) {
+    public Productos(int codigo, String letra,String actor,String nombre,String genero) {
         this.codigo = codigo;
         this.letra= letra;
-        Actor = actor;
+        this.Actor = actor;
+        this.nombre=nombre;
         this.genero = genero;
     }
 }

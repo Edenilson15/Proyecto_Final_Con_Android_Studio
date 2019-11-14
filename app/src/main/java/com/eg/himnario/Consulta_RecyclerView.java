@@ -1,6 +1,13 @@
 package com.eg.himnario;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -9,16 +16,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.eg.himnario.Config;
+import com.eg.himnario.Productos;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +30,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 
 public class Consulta_RecyclerView extends AppCompatActivity {
@@ -68,13 +74,13 @@ public class Consulta_RecyclerView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta__recycler_view);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar1);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
         toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
         toolbar.setTitleMargin(0, 0, 0, 0);
-        toolbar.setSubtitle("LIsta de Alabanzas");
+        toolbar.setSubtitle("Consulta de Artículos");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
-        toolbar.setTitle("Himnario");
+        toolbar.setTitle("Prof. Gámez");
         setSupportActionBar(toolbar);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -133,8 +139,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
                                         articulosObject.getString("letra"),
                                         articulosObject.getString("autor"),
                                         articulosObject.getString("nombre"),
-                                        articulosObject.getString("genero"),
-                                        articulosObject.getString("imagen")
+                                        articulosObject.getString("genero")
                                 ));
                             }
 
@@ -153,7 +158,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
         });
 
         //Volley.newRequestQueue(this).add(stringRequest);
-       // MySingleton.getInstance(this).addToRequestQueue(stringRequest);
+        // MySingleton.getInstance(this).addToRequestQueue(stringRequest);
         MySingleton.getInstance(Consulta_RecyclerView.this).addToRequestQueue(stringRequest);
     }
 
@@ -186,14 +191,14 @@ public class Consulta_RecyclerView extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_recycler_view, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-       if(id == R.id.action_salir){
+        if(id == R.id.action_salir){
             DialogConfirmacion();
             return true;
         }
