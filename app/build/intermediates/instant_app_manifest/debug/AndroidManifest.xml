@@ -21,10 +21,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.eg.himnario.SplashScreen"
-            android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="com.eg.himnario.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

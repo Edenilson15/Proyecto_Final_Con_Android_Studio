@@ -3,27 +3,18 @@ package com.eg.himnario;
 public class Productos {
     int codigo;
     String letra;
-    String Actor;
-    String genero;
+    String autor;
     String nombre;
 
-    public String getNombre() {
-        return nombre;
+    public String getImagen() {
+        return imagen;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
     String imagen;
-
-    public String getLetra() {
-        return letra;
-    }
-
-    public void setLetra(String letra) {
-        this.letra = letra;
-    }
 
     public int getCodigo() {
         return codigo;
@@ -33,36 +24,35 @@ public class Productos {
         this.codigo = codigo;
     }
 
-
-
-    public String getActor() {
-        return Actor;
+    public String getLetra() {
+        return letra;
     }
 
-    public void setActor(String actor) {
-        Actor = actor;
+    public void setLetra(String letra) {
+        this.letra = letra;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-    public String getImagen() {
-        return imagen;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public String getNombre() {
+        return nombre;
     }
 
-    public Productos(int codigo, String letra,String actor,String nombre,String genero) {
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+
+    public Productos(int codigo, String letra, String autor, String nombre) {
         this.codigo = codigo;
-        this.letra= letra;
-        this.Actor = actor;
-        this.nombre=nombre;
-        this.genero = genero;
+        this.letra = letra;
+        this.autor = autor;
+        this.nombre = nombre;
     }
 }

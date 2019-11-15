@@ -1263,8 +1263,10 @@ id textViewActor1
 id textViewCodigo
 id textViewCodigo1
 id textViewDescripcion
-id textViewgenero
-id textViewgenero1
+id textViewletra
+id textViewletra1
+id textViewnombre
+id textViewnombre1
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

@@ -107,22 +107,22 @@
                  />
 
             <TextView
-                android:id="@+id/textViewgenero"
+                android:id="@+id/textViewletra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewActor1"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/imageView"
                 android:fontFamily="sans-serif-black"
-                android:text="Genero: "
+                android:text="Letra: "
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000" />
 
             <TextView
-                android:id="@+id/textViewgenero1"
+                android:id="@+id/textViewletra1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewgenero"
+                android:layout_below="@id/textViewletra"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="1dp"
                 android:layout_toRightOf="@id/imageView"
@@ -132,6 +132,33 @@
                 android:text="Rock"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/textViewnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewletra1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:fontFamily="sans-serif-black"
+                android:text="Nombre :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewnombre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewnombre"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/imageView"
+                android:background="#BEB48847"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="50dp"
+                android:text="Rock"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
 
 
         </RelativeLayout>

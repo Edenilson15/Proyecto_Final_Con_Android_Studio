@@ -108,7 +108,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
 
 
     private void loadProductos() {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -138,8 +138,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
                                         articulosObject.getInt("codigo"),
                                         articulosObject.getString("letra"),
                                         articulosObject.getString("autor"),
-                                        articulosObject.getString("nombre"),
-                                        articulosObject.getString("genero")
+                                        articulosObject.getString("nombre")
                                 ));
                             }
 

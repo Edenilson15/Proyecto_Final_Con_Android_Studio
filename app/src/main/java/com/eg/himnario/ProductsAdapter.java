@@ -47,8 +47,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         if(im.isEmpty()) {
             holder.imageView.setImageResource(R.drawable.imgnoencontrada);
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textViewgenero1.setText(product.getGenero());
-            holder.textViewActor1.setText(String.valueOf(product.getActor()));
+            holder.textViewletra1.setText(product.getLetra());
+            holder.textViewnombre1.setText(product.getNombre());
+            holder.textViewActor1.setText(String.valueOf(product.getAutor()));
 
         }else{
             Glide.with(mCtx)
@@ -56,8 +57,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
                     .into(holder.imageView);
 
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-            holder.textViewgenero1.setText(product.getGenero());
-            holder.textViewActor1.setText(String.valueOf(product.getActor()));
+            holder.textViewletra1.setText(product.getLetra());
+            holder.textViewnombre1.setText(product.getNombre());
+            holder.textViewActor1.setText(String.valueOf(product.getAutor()));
         }
 
     }
@@ -69,15 +71,16 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewCodigo1, textViewActor1, textViewgenero1;
+        TextView textViewCodigo1, textViewActor1, textViewletra1,textViewnombre1;
         ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
 
             textViewCodigo1 = itemView.findViewById(R.id.textViewCodigo1);
-            textViewgenero1 = itemView.findViewById(R.id.textViewgenero1);
+            textViewletra1 = itemView.findViewById(R.id.textViewletra1);
             textViewActor1= itemView.findViewById(R.id.textViewActor1);
+            textViewnombre1 = itemView.findViewById(R.id.textViewnombre1);
             imageView = itemView.findViewById(R.id.imageView);
         }
     }
