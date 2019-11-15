@@ -18,7 +18,7 @@
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="26dp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/tv3"
@@ -52,7 +52,7 @@
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="26dp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/tv4"
@@ -64,7 +64,7 @@
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/tv5"
@@ -76,7 +76,7 @@
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="26dp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
 </LinearLayout>
 
