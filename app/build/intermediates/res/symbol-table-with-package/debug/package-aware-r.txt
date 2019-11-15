@@ -1046,6 +1046,7 @@ drawable ic_view
 drawable ic_view_list
 drawable imgnoencontrada
 drawable itca
+drawable itca1
 drawable itca2
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator

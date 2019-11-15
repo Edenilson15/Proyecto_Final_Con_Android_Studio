@@ -75,11 +75,11 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
+                android:drawableStart="@drawable/ic_person"
                 android:background="@drawable/estiloedittext"
-                android:drawableStart="@drawable/ic_music"
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese el Nombre de Alabanza o Coro"
+                android:hint="Ingrese el nombre del autor"
                 android:paddingLeft="25dp" />
 
             <EditText
@@ -90,10 +90,10 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
-                android:drawableStart="@drawable/ic_person"
+                android:drawableStart="@drawable/ic_music"
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese el Autor de la Alabanza o Coro"
+                android:hint="Ingrese el categoria coro o Alabanza"
                 android:inputType="textPersonName"
                 android:paddingLeft="25dp" />
 
@@ -108,7 +108,7 @@
                 android:drawableStart="@drawable/ic_genero_musica"
                 android:drawablePadding="5dp"
                 android:fontFamily="sans-serif-black"
-                android:hint="Ingrese si es Alabanza o Coro"
+                android:hint="Ingrese nombre de la alabanza"
                 android:inputType="textPersonName"
                 android:paddingLeft="25dp" />
 
