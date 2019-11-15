@@ -1146,7 +1146,6 @@ id et_nombre
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1288,6 +1287,9 @@ id tv2
 id tv3
 id tv4
 id tv5
+id tvletra
+id tvnumero
+id tvtitulo
 id uniform
 id unlabeled
 id up

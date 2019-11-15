@@ -24,7 +24,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et_codigo, et_letra, et_genero,et_autor, et_nombre;
-    private Button btn_guardar, btn_eliminar, btn_actualizar;//btn_consultaCodigo, btn_consultaDescripcion,
+    private Button btn_guardar;//btn_consultaCodigo, btn_consultaDescripcion,
 
     boolean inputEt=false;
     boolean inputEd=false;
@@ -200,127 +200,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Evento clic del botón eliminar.
-        btn_eliminar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(et_codigo.getText().toString().length()==0){
-                    et_codigo.setError("campo obligatorio");
-                    inputEt = false;
-                }else {
-                    inputEt=true;
-                }
-
-                if(inputEt){
-                    String codigo = et_codigo.getText().toString();
-                    manto.eliminar(MainActivity.this, codigo);
-
-                    limpiarDatos();
-                    et_codigo.requestFocus();
-                    /*
-                    if(estadoEliminar){
-                        Toast.makeText(MainActivity.this, "Registro Eliminado correctamente.", Toast.LENGTH_SHORT).show();
-                        limpiarDatos();
-                    }else{
-                         Toast toast = Toast.makeText(getApplicationContext(), "--> Nothing." +
-                                        "\nNo hay información que eliminar.", Toast.LENGTH_LONG);
-                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                toast.show();
-                        limpiarDatos();
-                    }*/
-                }
-            }
-        });
 
 
-      /*  btn_consultaCodigo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                //Begin...
-                if(et_codigo.getText().toString().length()==0){
-                    et_codigo.setError("campo obligatorio");
-                    inputEt = false;
-                }else {
-                    inputEt=true;
-                }
-
-                if(inputEt) {
-                    String codigo = et_codigo.getText().toString();
-                    manto.consultarCodigo(MainActivity.this, codigo);
-                    et_codigo.requestFocus();
-                }
-                //End
-
-            }
-        });
-
-
-
-        btn_consultaDescripcion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if(et_letra.getText().toString().length()==0){
-                    et_letra.setError("Campo obligatorio");
-                    inputEd = false;
-                }else {
-                    inputEd=true;
-                }
-                if(inputEd){
-                    String descripcion = et_letra.getText().toString();
-                    //datos.setDescripcion(descripcion);
-                    manto.consultarDescripcion(MainActivity.this, descripcion);
-                    et_letra.requestFocus();
-                    //Hilo();
-
-                }
-
-            }
-        });
-*/
-
-        btn_actualizar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if(et_codigo.getText().toString().length()==0){
-                    et_codigo.setError("campo obligatorio");
-                    inputEt = false;
-                }else {
-                    inputEt=true;
-                }
-
-                if(inputEt) {
-
-                    String cod = et_codigo.getText().toString();
-                    String letra = et_letra.getText().toString();
-                    String autor = et_autor.getText().toString();
-                    String nombre = et_nombre.getText().toString();
-                    String genero = et_genero.getText().toString();
-
-                    datos.setCodigo(Integer.parseInt(cod));
-                    datos.setLetra(letra);
-                    datos.setAutor(autor);
-                    datos.setNombre(nombre);
-                    datos.setGenero(genero);
-
-                    manto.modificar(MainActivity.this, datos);
-                    limpiarDatos();
-                    et_codigo.requestFocus();
-                }
-
-            }
-        });
-
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Que Buscas", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
     }
 
