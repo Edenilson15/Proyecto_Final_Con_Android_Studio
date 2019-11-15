@@ -294,17 +294,18 @@ public class MantenimientoMySQL {
                                 String codigo = jsonArray.getJSONObject(0).getString("codigo");
                                 String letra = jsonArray.getJSONObject(0).getString("letra");
                                 String autor = jsonArray.getJSONObject(0).getString("autor");
-                                String nombre = jsonArray.getJSONObject(0).getString("nombre");
-                                String genero = jsonArray.getJSONObject(0).getString("genero");
+                                String nombre = jsonArray.getJSONObject(0).getString("genero");
+                                String genero = jsonArray.getJSONObject(0).getString("nombre");
 
 
                                 Intent intent = new Intent(context, MainActivity.class);
                                 intent.putExtra("senal", "1");
                                 intent.putExtra("codigo", codigo.toString());
                                 intent.putExtra("letra", letra);
-                                intent.putExtra("nombre", nombre);
                                 intent.putExtra("autor", autor);
                                 intent.putExtra("genero", genero);
+                                intent.putExtra("nombre", nombre);
+
                                 context.startActivity(intent);
 
 

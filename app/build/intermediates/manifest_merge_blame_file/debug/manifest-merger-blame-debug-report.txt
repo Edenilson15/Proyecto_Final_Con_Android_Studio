@@ -6,84 +6,84 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml
+8-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml
+9-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-11-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:39:5-86
-11-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:39:22-83
+11-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:40:5-86
+11-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:40:22-83
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:40:5-67
-12-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:40:22-64
+12-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:41:5-67
+12-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:41:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:42:5-76
-13-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:42:22-73
+13-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:43:5-76
+13-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:43:22-73
 14
 15    <application
-15-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:5:5-38:19
+15-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:5:5-39:19
 16        android:allowBackup="true"
-16-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:6:9-35
+16-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:6:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.0.1] C:\Users\Brenda canales\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+17-->[androidx.core:core:1.0.1] C:\Users\Samsumg\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:7:9-43
+19-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:7:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:8:9-41
+20-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:8:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:9:9-54
+21-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:9:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:10:9-35
+22-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:10:9-35
 23        android:theme="@style/AppTheme" >
-23-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:11:9-40
+23-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:11:9-40
 24        <activity
-24-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:13:9-16:16
+24-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:13:9-21:16
 25            android:name="com.eg.himnario.SplashScreen"
-25-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:14:13-41
+25-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:14:13-41
 26            android:theme="@style/AppTheme.NoActionBar" >
-26-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:13-56
-27        </activity>
-28        <activity android:name="com.eg.himnario.MostrarAutor" />
-28-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:18:9-59
-28-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:18:19-47
-29        <activity android:name="com.eg.himnario.NombreAutor" />
-29-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:9-49
-29-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:19-46
-30        <activity android:name="com.eg.himnario.mostrarNumero" />
-30-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:20:9-51
-30-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:20:19-48
-31        <activity android:name="com.eg.himnario.NumeroHimno" />
-31-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:21:9-49
-31-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:21:19-46
-32        <activity
-32-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:22:9-24:59
-33            android:name="com.eg.himnario.Consulta_RecyclerView"
-33-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:23:13-50
-34            android:theme="@style/AppTheme.NoActionBar" />
-34-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:24:13-56
-35        <activity
-35-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:25:9-27:59
-36            android:name="com.eg.himnario.Inicio"
-36-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:13-35
-37            android:theme="@style/AppTheme.NoActionBar" />
-37-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:27:13-56
-38        <activity
-38-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:9-37:20
-39            android:name="com.eg.himnario.MainActivity"
-39-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:29:13-41
-40            android:theme="@style/AppTheme.NoActionBar" >
-40-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:30:13-56
-41            <intent-filter>
-41-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:31:13-35:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:32:17-69
-42-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:32:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:34:17-77
-44-->C:\Users\Brenda canales\Desktop\Proyecto_final\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:34:27-74
-45            </intent-filter>
+26-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:15:13-56
+27            <intent-filter>
+27-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:16:13-20:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:17:17-69
+28-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:17:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:17-77
+30-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:19:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="com.eg.himnario.MostrarAutor" />
+33-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:23:9-59
+33-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:23:19-47
+34        <activity android:name="com.eg.himnario.NombreAutor" />
+34-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:24:9-49
+34-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:24:19-46
+35        <activity android:name="com.eg.himnario.mostrarNumero" />
+35-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:25:9-51
+35-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:25:19-48
+36        <activity android:name="com.eg.himnario.NumeroHimno" />
+36-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:9-49
+36-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:26:19-46
+37        <activity
+37-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:27:9-29:59
+38            android:name="com.eg.himnario.Consulta_RecyclerView"
+38-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:28:13-50
+39            android:theme="@style/AppTheme.NoActionBar" />
+39-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:29:13-56
+40        <activity
+40-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:30:9-32:59
+41            android:name="com.eg.himnario.Inicio"
+41-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:31:13-35
+42            android:theme="@style/AppTheme.NoActionBar" />
+42-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:32:13-56
+43        <activity
+43-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:33:9-38:20
+44            android:name="com.eg.himnario.MainActivity"
+44-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:34:13-41
+45            android:theme="@style/AppTheme.NoActionBar" >
+45-->C:\Users\Samsumg\Desktop\Proyecto_Final_Con_Android_Studio\app\src\main\AndroidManifest.xml:35:13-56
 46        </activity>
 47    </application>
 48
