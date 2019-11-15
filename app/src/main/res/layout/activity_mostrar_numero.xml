@@ -27,4 +27,44 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/articulo" />
 
+
+    <TextView
+        android:id="@+id/tvnumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/tvletra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+
 </LinearLayout>
