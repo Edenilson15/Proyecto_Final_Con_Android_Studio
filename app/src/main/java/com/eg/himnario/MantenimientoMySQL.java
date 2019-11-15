@@ -446,10 +446,9 @@ public class MantenimientoMySQL {
 
                                 int codigo = articulosObject.getInt("codigo");
                                 String letra = articulosObject.getString("letra");
-                                String genero = articulosObject.getString("genero");
                                 String autor = articulosObject.getString("autor");
                                 String nombre = articulosObject.getString("nombre");
-                                Productos objeto = new Productos(codigo, letra,autor, genero,nombre);
+                                Productos objeto = new Productos(codigo, letra,autor,nombre);
                                 productosList.add(objeto);
 
                                 /*

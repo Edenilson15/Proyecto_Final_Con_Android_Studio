@@ -1105,11 +1105,8 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btn_actualizar
-id btn_consultaDescripcion
 id btn_consultaNumero
 id btn_consultaporNombre
-id btn_eliminar
 id btn_guardar
 id buttonPanel
 id center

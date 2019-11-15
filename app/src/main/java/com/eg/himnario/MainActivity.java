@@ -95,8 +95,7 @@ public class MainActivity extends AppCompatActivity {
         btn_guardar =  findViewById(R.id.btn_guardar);
        // btn_consultaCodigo = (Button) findViewById(R.id.btn_consultaCodigo);
         //btn_consultaDescripcion = findViewById(R.id.btn_consultaDescripcion);
-        btn_eliminar = findViewById(R.id.btn_eliminar);
-        btn_actualizar = findViewById(R.id.btn_actualizar);
+
         //tv_resultado = (TextView) findViewById(R.id.tv_resultado);
 
 
