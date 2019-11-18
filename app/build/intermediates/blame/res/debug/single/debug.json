@@ -464,6 +464,10 @@
         "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_biblia.xml.flat",
+        "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\drawable\\ic_biblia.xml"
+    },
+    {
         "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_search.xml.flat",
         "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\drawable-v24\\ic_search.xml"
     },
@@ -1424,6 +1428,10 @@
         "source": "C:\\Users\\Shadows\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\anim\\design_snackbar_out.xml"
     },
     {
+        "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\font_almendra_bold_italic.xml.flat",
+        "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\font\\almendra_bold_italic.xml"
+    },
+    {
         "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
         "source": "C:\\Users\\Shadows\\.gradle\\caches\\transforms-2\\files-2.1\\906744c4ddcbc384c5a8d2d69414f8fa\\appcompat-1.0.2\\res\\anim\\abc_slide_out_bottom.xml"
     },
@@ -1940,8 +1948,16 @@
         "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\drawable\\sink.jpg"
     },
     {
+        "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\font_akronim.xml.flat",
+        "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\font\\akronim.xml"
+    },
+    {
         "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
         "source": "C:\\Users\\Shadows\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\color\\mtrl_fab_ripple_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\font_aladin.xml.flat",
+        "source": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\src\\main\\res\\font\\aladin.xml"
     },
     {
         "merged": "C:\\Users\\Shadows\\Desktop\\Proyecto_Final_Con_Android_Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",

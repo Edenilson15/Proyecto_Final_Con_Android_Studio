@@ -13,12 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/akronim"
         android:text="ITCA-FEPADE"
         android:textAlignment="center"
         android:textColor="#110E0E"
-        android:textSize="26dp"
-        android:textStyle="italic" />
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -32,11 +32,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/almendra_bold_italic"
         android:text="Desarrolladores:"
         android:textAlignment="center"
         android:textColor="#110E0E"
-        android:textSize="30dp"
+        android:textSize="36sp"
         android:textStyle="italic" />
 
     <TextView
@@ -44,11 +44,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-black"
-        android:text=" Ricardo Edenilson Mauricio
-        Maria de Jesus Cortez Alvarez
-        Brenda Estefany Canales Diaz
-        Mauricio Enrrique Umaña"
+        android:fontFamily="@font/aladin"
+        android:text=" Ricardo Edenilson Mauricio   "
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aladin"
+        android:text="Maria de Jesus Cortez Alvarez        "
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aladin"
+        android:text=" Brenda Estefany Canales Diaz  "
+        android:textAlignment="center"
+        android:textColor="#110E0E"
+        android:textSize="26dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aladin"
+        android:text="Mauricio Enrique Umaña"
         android:textAlignment="center"
         android:textColor="#110E0E"
         android:textSize="26dp"
@@ -59,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/almendra_bold_italic"
         android:text="Instructor:"
         android:textAlignment="center"
         android:textColor="#110E0E"
@@ -71,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/aladin"
         android:text="Manuel de Jesus Gamez"
         android:textAlignment="center"
         android:textColor="#110E0E"
