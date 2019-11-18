@@ -6,15 +6,9 @@ public class Productos {
     String autor;
     String nombre;
 
-    public String getImagen() {
-        return imagen;
-    }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
 
-    String imagen;
+
 
     public int getCodigo() {
         return codigo;

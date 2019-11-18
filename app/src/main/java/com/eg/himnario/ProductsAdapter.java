@@ -19,17 +19,17 @@ import java.util.List;
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewHolder> {
 
 
-    private Context mCtx;
+
     private List<Productos> productList;
 
     public ProductsAdapter(Context mCtx, List<Productos> productList) {
-        this.mCtx = mCtx;
+
         this.productList = productList;
     }
 
     @Override
     public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(mCtx);
+        LayoutInflater inflater = LayoutInflater.from(null);
         View view = inflater.inflate(R.layout.list_layout, null);
         return new ProductViewHolder(view);
     }
@@ -40,21 +40,21 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
         //loading the image
 
-        String im = product.getImagen();
+
         //Toast.makeText(mCtx, ""+im, Toast.LENGTH_SHORT).show();
+        String Ac = product.getAutor();
 
+        if(Ac.isEmpty()) {
 
-        if(im.isEmpty()) {
-            holder.imageView.setImageResource(R.drawable.imgnoencontrada);
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
             holder.textViewletra1.setText(product.getLetra());
             holder.textViewnombre1.setText(product.getNombre());
             holder.textViewActor1.setText(String.valueOf(product.getAutor()));
 
         }else{
-            Glide.with(mCtx)
-                    .load(product.getImagen())
-                    .into(holder.imageView);
+
+
+
 
             holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
             holder.textViewletra1.setText(product.getLetra());
@@ -72,7 +72,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewCodigo1, textViewActor1, textViewletra1,textViewnombre1;
-        ImageView imageView;
+
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -81,7 +81,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             textViewletra1 = itemView.findViewById(R.id.textViewletra1);
             textViewActor1= itemView.findViewById(R.id.textViewActor1);
             textViewnombre1 = itemView.findViewById(R.id.textViewnombre1);
-            imageView = itemView.findViewById(R.id.imageView);
+
         }
     }
 
