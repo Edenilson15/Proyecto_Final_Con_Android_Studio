@@ -158,7 +158,7 @@ public class Consulta_RecyclerView extends AppCompatActivity {
 
         //Volley.newRequestQueue(this).add(stringRequest);
         // MySingleton.getInstance(this).addToRequestQueue(stringRequest);
-        MySingleton.getInstance(Consulta_RecyclerView.this).addToRequestQueue(stringRequest);
+
     }
 
 

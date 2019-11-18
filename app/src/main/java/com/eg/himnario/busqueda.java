@@ -110,7 +110,7 @@ public class busqueda {
                 }
             };
 
-            MySingleton.getInstance(context).addToRequestQueue(stringRequest);
+
 
         }
 

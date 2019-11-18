@@ -113,7 +113,7 @@ public class MantenimientoMySQL {
             }
         };
 
-        MySingleton.getInstance(context).addToRequestQueue(request);
+
 
     }
 
@@ -172,7 +172,7 @@ public class MantenimientoMySQL {
             }
         };
 
-        MySingleton.getInstance(context).addToRequestQueue(request);
+
 
         return estadoGuardar;
     }
@@ -246,7 +246,7 @@ public class MantenimientoMySQL {
                     }
                 };
 
-                MySingleton.getInstance(context).addToRequestQueue(request);
+
             }
         });
 
@@ -333,7 +333,7 @@ public class MantenimientoMySQL {
             }
         };
 
-        MySingleton.getInstance(context).addToRequestQueue(stringRequest);
+
 
     }
 
@@ -412,7 +412,7 @@ public class MantenimientoMySQL {
             }
         };
 
-        MySingleton.getInstance(context).addToRequestQueue(stringRequest);
+
 
     }
 
@@ -475,7 +475,7 @@ public class MantenimientoMySQL {
         });
 
         //Volley.newRequestQueue(this).add(stringRequest);
-        MySingleton.getInstance(context).addToRequestQueue(stringRequest);
+
 
         return productosList;
     }
@@ -555,7 +555,7 @@ public class MantenimientoMySQL {
             }
         };
 
-        MySingleton.getInstance(context).addToRequestQueue(stringRequest);
+
 
     }
 
@@ -570,23 +570,6 @@ public class MantenimientoMySQL {
     }
 
 
-    public void createfile(Context context, String codigo, String letra, String autor, String genero,String nombre){
-        SharedPreferences preferences = context.getSharedPreferences("profeGamez", MODE_PRIVATE);
-        //OBTENIENDO LA FECHA Y HORA ACTUAL DEL SISTEMA.
-        DateFormat formatodate= new SimpleDateFormat("yyyy/MM/dd");
-        String date= formatodate.format(new Date());
-        DateFormat formatotime= new SimpleDateFormat("HH:mm:ss a");
-        String time= formatotime.format(new Date());
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("fecha", date);
-        editor.putString("hora", time);
-        editor.putString("codigo", codigo);
-        editor.putString("letra", letra);
-        editor.putString("nombre", nombre);
-        editor.putString("autor", autor);
-        editor.putString("genero", genero);
-        editor.commit();
-    }
 
 
     /*
